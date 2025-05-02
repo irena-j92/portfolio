@@ -119,10 +119,12 @@ const StyledModal = ({ isDarkMode, setIsDarkMode }) => {
       ref={modalRef}
       className={`fixed inset-0 z-50 flex flex-col
         ${isDarkMode ? 'bg-[#111111] text-white' : 'bg-white text-gray-700'}
-        overflow-y-auto`}
+        overflow-y-auto overflow-x-hidden`} // Prevent horizontal scrolling
       style={{
         height: '100vh',
         maxHeight: '100vh',
+        width: '100vw', // Ensure full width
+        maxWidth: '100vw', // Ensure full width
       }}
     >
       {/* Scroll to top button */}
