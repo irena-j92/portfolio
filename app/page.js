@@ -9,40 +9,40 @@ import Footer from "./components/Footer.jsx";
 import StyledModal from "./components/StyledModal.jsx";
 import { useEffect, useState } from "react";
 
-
 export default function Home() {
-
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in
-      localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        setIsDarkMode(true)
-    }else{
-      setIsDarkMode(false)
+    const theme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (theme === 'dark' || (!theme && prefersDark)) {
+      setIsDarkMode(true);
+    } else {
+      setIsDarkMode(false);
     }
-  },[])
+  }, []);
 
-  useEffect(()=>{
-    if(isDarkMode){
+  useEffect(() => {
+    if (isDarkMode) {
       document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
-    }else{
+      localStorage.setItem('theme', 'dark');
+    } else {
       document.documentElement.classList.remove('dark');
-      localStorage.theme = 'dark';
+      localStorage.setItem('theme', 'light');
     }
-  },[isDarkMode])
+  }, [isDarkMode]);
 
-return (
-  <>
-    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-    <Header isDarkMode={isDarkMode}/>
-    <About isDarkMode={isDarkMode}/>
-    <Services isDarkMode={isDarkMode}/>
-    <Work isDarkMode={isDarkMode}/>
-    <Contact isDarkMode={isDarkMode}/>
-    <Footer isDarkMode={isDarkMode}/>
-    <StyledModal isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-  </>
-);
+  return (
+    <>
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+      <Header isDarkMode={isDarkMode}/>
+      <About isDarkMode={isDarkMode}/>
+      <Services isDarkMode={isDarkMode}/>
+      <Work isDarkMode={isDarkMode}/>
+      <Contact isDarkMode={isDarkMode}/>
+      <Footer isDarkMode={isDarkMode}/>
+      <StyledModal isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+    </>
+  );
 }

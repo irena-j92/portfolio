@@ -61,8 +61,9 @@ const StyledModal = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <div 
       ref={modalRef}
-      className={`fixed inset-0 z-50 flex flex-col min-h-screen overflow-y-auto overflow-x-hidden
-        ${isDarkMode ? 'bg-[#111111] text-white' : 'bg-white text-gray-700'}`}      
+      className={`fixed inset-0 z-50 flex flex-col 
+        ${isDarkMode ? 'bg-[#111111] text-white' : 'bg-white text-gray-700'}
+        overflow-y-auto`}   
     >
 
       {/* Scroll to top button */}
@@ -92,12 +93,12 @@ const StyledModal = ({ isDarkMode, setIsDarkMode }) => {
       )}
 
 <Navbar
-  isModal={false} 
+  isModal={true} 
   onClose={closeModal} 
   isDarkMode={isDarkMode} 
   setIsDarkMode={setIsDarkMode}
   modalRef={modalRef}
-  className="bg-white dark:bg-[#111111]"
+  className="bg-white dark:bg-[#111111] shadow-none border-none"
 />
 
       {/* Content */}
