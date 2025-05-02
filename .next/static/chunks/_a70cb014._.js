@@ -1458,7 +1458,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const Navbar = ({ isDarkMode, setIsDarkMode, isModal = false, modalRef = null, onClose })=>{
+const Navbar = ({ isDarkMode, setIsDarkMode, isModal = false, modalRef = null, onClose, className = '' })=>{
     _s();
     const [isScroll, setIsScroll] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const sideMenuRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])();
@@ -1554,7 +1554,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode, isModal = false, modalRef = null, o
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                 className: `sticky top-0 w-full px-5 lg:px-8 xl:px-[8%] py-4
-        flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-100 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:bg-opacity-100" : ""}`,
+  flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-100 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:bg-opacity-100" : ""} ${className}`,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>handleNavigation("#top"),
@@ -3663,7 +3663,7 @@ const Brom = ()=>{
                     duration: 0.5,
                     delay: 0.3
                 },
-                className: "text-center text-5xl font-Ovo mt-20",
+                className: "text-center text-5xl font-Ovo mt-8",
                 children: "Brom AI Assistant"
             }, void 0, false, {
                 fileName: "[project]/app/components/Brom.jsx",
@@ -3730,7 +3730,7 @@ const Brom = ()=>{
                     duration: 0.5,
                     delay: 0.3
                 },
-                className: "inline-flex text-center grid grid-cols-3 sm:grid-cols-auto max-w-4xl mx-auto text-lg justify-center gap-1 px-1 my-10",
+                className: "inline-flex text-center grid grid-cols-1 sm:grid-cols-3 max-w-4xl mx-auto text-[15px] justify-center gap-1 px-1 my-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
@@ -3843,7 +3843,7 @@ const Brom = ()=>{
                 className: "max-w-4xl mx-auto space-y-6",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
                         children: "Project Overview "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
@@ -3851,14 +3851,14 @@ const Brom = ()=>{
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "Brom is a virtual AI assistant app answering all questions regarding the city of Bromberg."
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
                                 lineNumber: 70,
-                                columnNumber: 71
+                                columnNumber: 100
                             }, this),
                             " Sustainability stands in the forefront of the city’s ideology and in this case, technology can help keeping the city „green“ by lowering the amount of people driving through the city to finish administrative tasks. It would also help save time, so the residents of Bromberg could maintain a better life quality. ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -3894,7 +3894,7 @@ const Brom = ()=>{
                 className: "text-lg max-w-4xl mx-auto space-y-6",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
                         children: "Project Goals "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
@@ -3902,14 +3902,14 @@ const Brom = ()=>{
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "The main project goal is to create an interactive app with an intuitive user interface that will be a helpful tool for Bromberg’s stakeholders."
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
                                 lineNumber: 86,
-                                columnNumber: 75
+                                columnNumber: 104
                             }, this),
                             " The app should offer a wide range of functions with the AI assistant in the center. You can ask questions by typing or through voice recordings and view your history. Besides helping users finish their tasks faster and answering their questions, the app should also serve as a storage for important documents and files. ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -4169,7 +4169,7 @@ const Brom = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-10 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
+                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-10 px-2 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
                         children: "01 / Empathize "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
@@ -4187,14 +4187,14 @@ const Brom = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "The main theme of my research was the reception of AI by people. "
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
                                 lineNumber: 141,
-                                columnNumber: 73
+                                columnNumber: 102
                             }, this),
                             "The questions that were circulating in my mind were: Would the majority of Bromberg use this app? Would it be useful to integrate an AI Assistant or alternatively create an app where you have to navigate through all the content by yourself? One of the things I've found out is that",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -4221,7 +4221,7 @@ const Brom = ()=>{
                             duration: 0.6,
                             delay: 0.9
                         },
-                        className: "flex items-end gap-2 text-2xl sm:text-lg md:text-2xl mb-3 mt-20 font-Ovo font-semibold",
+                        className: "flex items-end gap-2 text-2xl sm:text-lg md:text-2xl mb-3 mt-20 px-2 sm:px-0 md: px-2 sm:px-0 md:px-0 font-Ovo font-semibold",
                         children: "User Interviews "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
@@ -4239,7 +4239,7 @@ const Brom = ()=>{
                             duration: 0.7,
                             delay: 1.1
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             "The participants for the interviews were the same as for Bromberg’s website. Only this time, ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -4277,10 +4277,10 @@ const Brom = ()=>{
                             duration: 0.7,
                             delay: 1.3
                         },
-                        className: "grid grid-cols-2 sm:grid-cols-4 gap-6 items-center",
+                        className: "grid grid-cols-2 sm:grid-cols-4 gap-2 md:gap-4 sm:gap-6 items-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-[#3F47D3] rounded-[20px] px-4 py-6 mb-6 mt-4",
+                                className: "bg-[#3F47D3] rounded-[20px] px-4 py-6 mb-6 mt-4 max-w-screen",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "text-center text-white text-6xl sm:text-lg lg:text-[70px] md:text-2xl mt-8 font-Ovo",
@@ -4291,13 +4291,13 @@ const Brom = ()=>{
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "text-center text-lg sm:text-sm text-white py-4",
+                                        className: "text-center text-sm md:text-sm sm:text-sm text-white py-4",
                                         children: [
                                             "fear losing their job ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/app/components/Brom.jsx",
                                                 lineNumber: 169,
-                                                columnNumber: 92
+                                                columnNumber: 103
                                             }, this),
                                             "to artifical intelligence"
                                         ]
@@ -4313,7 +4313,7 @@ const Brom = ()=>{
                                 columnNumber: 7
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-[#3F47D3] rounded-[20px] px-4 py-6 mb-6 mt-4",
+                                className: "bg-[#3F47D3] rounded-[20px] px-4 py-6 mb-6 mt-4 max-w-screen",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "text-center text-white text-6xl sm:text-lg lg:text-[70px] md:text-2xl mt-8 font-Ovo",
@@ -4324,13 +4324,13 @@ const Brom = ()=>{
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "text-center text-lg sm:text-sm text-white py-4",
+                                        className: "text-center text-sm md:text-sm sm:text-sm text-white py-4",
                                         children: [
                                             "fear relying too much",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/app/components/Brom.jsx",
                                                 lineNumber: 174,
-                                                columnNumber: 91
+                                                columnNumber: 102
                                             }, this),
                                             "on this technology"
                                         ]
@@ -4357,13 +4357,13 @@ const Brom = ()=>{
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "text-center text-lg sm:text-sm text-white py-4",
+                                        className: "text-center text-sm md:text-sm sm:text-sm text-white py-4",
                                         children: [
                                             "think speeding up tasks",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/app/components/Brom.jsx",
                                                 lineNumber: 179,
-                                                columnNumber: 93
+                                                columnNumber: 104
                                             }, this),
                                             "is a benefit"
                                         ]
@@ -4390,13 +4390,13 @@ const Brom = ()=>{
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "text-center text-lg sm:text-sm text-white py-4",
+                                        className: "text-center text-sm md:text-sm sm:text-sm text-white py-4",
                                         children: [
                                             "encourage AI laws ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/app/components/Brom.jsx",
                                                 lineNumber: 184,
-                                                columnNumber: 88
+                                                columnNumber: 99
                                             }, this),
                                             "and regulations"
                                         ]
@@ -4428,7 +4428,7 @@ const Brom = ()=>{
                             duration: 0.7,
                             delay: 1.5
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold",
+                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 px-2 sm:px-0 md:px-0 font-Ovo font-semibold",
                         children: "User Persona"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
@@ -4466,6 +4466,11 @@ const Brom = ()=>{
                         lineNumber: 194,
                         columnNumber: 5
                     }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ResponsiveImageModal, {}, void 0, false, {
+                        fileName: "[project]/app/components/Brom.jsx",
+                        lineNumber: 200,
+                        columnNumber: 9
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         initial: {
                             opacity: 0,
@@ -4481,16 +4486,16 @@ const Brom = ()=>{
                         },
                         className: "max-w-4xl mx-auto space-y-6",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                            className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
+                            className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 px-2 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
                             children: "02 / Define"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Brom.jsx",
-                            lineNumber: 206,
+                            lineNumber: 207,
                             columnNumber: 1
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 201,
+                        lineNumber: 202,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h3, {
@@ -4504,11 +4509,11 @@ const Brom = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold",
+                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 px-2 sm:px-0 md:px-0 font-Ovo font-semibold",
                         children: "Competitive Analysis"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 209,
+                        lineNumber: 210,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -4522,21 +4527,21 @@ const Brom = ()=>{
                             duration: 0.6,
                             delay: 0.9
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             "The AI industry is growing rapidly and there are a handful of AI apps to choose from. For my research I've chosen two well known assistants and a website extension of the Visit Helsinki website. ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "The criteria during my inspection of the competition were: user support and guides, outputs, inputs, transparency and speed."
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 220,
+                                lineNumber: 221,
                                 columnNumber: 117
                             }, this),
                             " Since the main point of having an assistant app is to help users, it is important to integrate suggestions and offer edit options inside the app. Viewing their chat history and adding bookmarks would also be beneficial functions for the user."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 215,
+                        lineNumber: 216,
                         columnNumber: 2
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4560,17 +4565,17 @@ const Brom = ()=>{
                             onContextMenu: (e)=>e.preventDefault()
                         }, void 0, false, {
                             fileName: "[project]/app/components/Brom.jsx",
-                            lineNumber: 229,
+                            lineNumber: 230,
                             columnNumber: 1
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 225,
+                        lineNumber: 226,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 232,
+                        lineNumber: 233,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h3, {
@@ -4586,11 +4591,11 @@ const Brom = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold",
+                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 px-2 sm:px-0 md:px-0 font-Ovo font-semibold",
                         children: "Affinity Mapping"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 234,
+                        lineNumber: 235,
                         columnNumber: 2
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -4604,27 +4609,27 @@ const Brom = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "After wrapping up the competitive analysis, I started to brainstorm various ideas and possible features for the app."
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 243,
-                                columnNumber: 69
+                                lineNumber: 244,
+                                columnNumber: 98
                             }, this),
                             " I then sorted out the ones I wanted to focus on and divided them into different groups: UX & Usability, Accessibility, Community, End goals and Bugs & Fixes. Since AI answers being slow is a common problem for various users, I wanted to give the issue special attention. ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "It was also interesting to see if and how the other topics align with users' end goals."
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 245,
+                                lineNumber: 246,
                                 columnNumber: 144
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 239,
+                        lineNumber: 240,
                         columnNumber: 2
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4648,17 +4653,17 @@ const Brom = ()=>{
                             onContextMenu: (e)=>e.preventDefault()
                         }, void 0, false, {
                             fileName: "[project]/app/components/Brom.jsx",
-                            lineNumber: 252,
+                            lineNumber: 253,
                             columnNumber: 1
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 248,
+                        lineNumber: 249,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 255,
+                        lineNumber: 256,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4686,11 +4691,11 @@ const Brom = ()=>{
                                     duration: 0.5,
                                     delay: 0.3
                                 },
-                                className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
+                                className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
                                 children: "03 / Ideate "
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 261,
+                                lineNumber: 262,
                                 columnNumber: 4
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -4704,17 +4709,17 @@ const Brom = ()=>{
                                     duration: 0.5,
                                     delay: 0.7
                                 },
-                                className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                                className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                                 children: "I've created multiple task flows while working on this project, but I've chosen two I want to focus on. The first one would be useful for citizens, since they would be able to complete a lot of stress-inducing tasks in the comfort of their own home. The second task flow was created for tourists or users who are using the app briefly to search up upcoming events and happenings."
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 266,
+                                lineNumber: 267,
                                 columnNumber: 4
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 256,
+                        lineNumber: 257,
                         columnNumber: 4
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4738,12 +4743,12 @@ const Brom = ()=>{
                             onContextMenu: (e)=>e.preventDefault()
                         }, void 0, false, {
                             fileName: "[project]/app/components/Brom.jsx",
-                            lineNumber: 279,
+                            lineNumber: 280,
                             columnNumber: 3
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 275,
+                        lineNumber: 276,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h3, {
@@ -4757,11 +4762,11 @@ const Brom = ()=>{
                             duration: 0.7,
                             delay: 1.1
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl font-Ovo font-semibold",
+                        className: "flex items-end gap-2 text-2xl md:text-2xl px-2 sm:px-0 md:px-0 font-Ovo font-semibold",
                         children: "Task Flow: Verifying your identity"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 282,
+                        lineNumber: 283,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4785,12 +4790,12 @@ const Brom = ()=>{
                             onContextMenu: (e)=>e.preventDefault()
                         }, void 0, false, {
                             fileName: "[project]/app/components/Brom.jsx",
-                            lineNumber: 292,
+                            lineNumber: 293,
                             columnNumber: 2
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 288,
+                        lineNumber: 289,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h3, {
@@ -4804,11 +4809,11 @@ const Brom = ()=>{
                             duration: 0.7,
                             delay: 1.1
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mt-12 font-Ovo font-semibold",
+                        className: "flex items-end gap-2 text-2xl md:text-2xl mt-12 px-2 sm:px-0 md:px-0 font-Ovo font-semibold",
                         children: "Task Flow: Searching for events"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 295,
+                        lineNumber: 296,
                         columnNumber: 2
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4832,12 +4837,12 @@ const Brom = ()=>{
                             onContextMenu: (e)=>e.preventDefault()
                         }, void 0, false, {
                             fileName: "[project]/app/components/Brom.jsx",
-                            lineNumber: 305,
+                            lineNumber: 306,
                             columnNumber: 2
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 301,
+                        lineNumber: 302,
                         columnNumber: 2
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -4853,11 +4858,11 @@ const Brom = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: "As shown in the examples above, task completion was reduced to the fewest possible steps. Instead of exploring the app with the help of a navigation or menu, the AI assistant allows the user to get straight to their goal. This makes the app easy for use and efficient."
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 308,
+                        lineNumber: 309,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h3, {
@@ -4871,11 +4876,11 @@ const Brom = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo font-semibold",
+                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-Ovo font-semibold",
                         children: "Storyboarding"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 316,
+                        lineNumber: 317,
                         columnNumber: 2
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -4889,11 +4894,11 @@ const Brom = ()=>{
                             duration: 0.6,
                             delay: 0.9
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: "I was very excited for the storyboarding process, as designing an AI app was on my designer bucket list for some time. It was very challenging understanding the different aspects of the technology and its' complex nature. There were so many aspects to consider while designing the app, so it took me a few tries before I was able to settle on one design."
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 321,
+                        lineNumber: 322,
                         columnNumber: 2
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4917,17 +4922,17 @@ const Brom = ()=>{
                             onContextMenu: (e)=>e.preventDefault()
                         }, void 0, false, {
                             fileName: "[project]/app/components/Brom.jsx",
-                            lineNumber: 333,
+                            lineNumber: 334,
                             columnNumber: 1
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 329,
+                        lineNumber: 330,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 336,
+                        lineNumber: 337,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4955,11 +4960,11 @@ const Brom = ()=>{
                                     duration: 0.5,
                                     delay: 0.3
                                 },
-                                className: "flex items-end gap-2 text-2xl md:text-2xl mt-8 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
+                                className: "flex items-end gap-2 text-2xl md:text-2xl mt-8 px-2 sm:px-0 md:px-0 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
                                 children: "04 / Prototype"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 343,
+                                lineNumber: 344,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -4973,33 +4978,33 @@ const Brom = ()=>{
                                     duration: 0.5,
                                     delay: 0.7
                                 },
-                                className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                                className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                         children: "While building out my wireframes, I've worked with components and variants."
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 352,
-                                        columnNumber: 68
+                                        lineNumber: 353,
+                                        columnNumber: 97
                                     }, this),
                                     "I drew inspiration from various platforms and apps, but it was important to stay focused on the particular needs of Bromberg's stakeholders. After creating low-fidelity wireframes, my biggest concerns were more of a technical nature. It was important to take some extra time to figure out how to incorporate features like the face scan or ID verification. ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                         children: "Brom is a very powerful app and I'm sure that there will be even more useful features coming in the future."
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 355,
+                                        lineNumber: 356,
                                         columnNumber: 62
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 348,
+                                lineNumber: 349,
                                 columnNumber: 1
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 338,
+                        lineNumber: 339,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h3, {
@@ -5015,11 +5020,11 @@ const Brom = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-20 font-Ovo font-semibold",
+                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-20 px-2 sm:px-0 md:px-0 font-Ovo font-semibold",
                         children: "Style Guide"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 359,
+                        lineNumber: 360,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -5033,11 +5038,11 @@ const Brom = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: "Bromberg's official color is a shade of pale indigo, so I've chosen it as the primary app color. I've combined it with a pastel violet and different neutral colors. The typography is minimalistic and simple as well. Alltogether, I ended up creating a simple, but seamless design that is easy understandable and accessible to everyone."
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 364,
+                        lineNumber: 365,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5072,7 +5077,7 @@ const Brom = ()=>{
                                         children: "Urbanist"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 382,
+                                        lineNumber: 383,
                                         columnNumber: 3
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -5080,7 +5085,7 @@ const Brom = ()=>{
                                         children: "*123!@$%"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 383,
+                                        lineNumber: 384,
                                         columnNumber: 3
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5091,7 +5096,7 @@ const Brom = ()=>{
                                                 children: "Regular"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Brom.jsx",
-                                                lineNumber: 385,
+                                                lineNumber: 386,
                                                 columnNumber: 3
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -5099,7 +5104,7 @@ const Brom = ()=>{
                                                 children: "Semibold"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Brom.jsx",
-                                                lineNumber: 386,
+                                                lineNumber: 387,
                                                 columnNumber: 3
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -5107,19 +5112,19 @@ const Brom = ()=>{
                                                 children: "Bold"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Brom.jsx",
-                                                lineNumber: 387,
+                                                lineNumber: 388,
                                                 columnNumber: 3
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 384,
+                                        lineNumber: 385,
                                         columnNumber: 3
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 377,
+                                lineNumber: 378,
                                 columnNumber: 3
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5132,12 +5137,12 @@ const Brom = ()=>{
                                             children: "#3F47D3"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Brom.jsx",
-                                            lineNumber: 392,
+                                            lineNumber: 393,
                                             columnNumber: 84
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 392,
+                                        lineNumber: 393,
                                         columnNumber: 3
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -5147,12 +5152,12 @@ const Brom = ()=>{
                                             children: "#B9BFF9"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Brom.jsx",
-                                            lineNumber: 393,
+                                            lineNumber: 394,
                                             columnNumber: 73
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 393,
+                                        lineNumber: 394,
                                         columnNumber: 3
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -5162,12 +5167,12 @@ const Brom = ()=>{
                                             children: "#282525"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Brom.jsx",
-                                            lineNumber: 394,
+                                            lineNumber: 395,
                                             columnNumber: 85
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 394,
+                                        lineNumber: 395,
                                         columnNumber: 4
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -5177,24 +5182,24 @@ const Brom = ()=>{
                                             children: "#6A6A6A"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Brom.jsx",
-                                            lineNumber: 395,
+                                            lineNumber: 396,
                                             columnNumber: 84
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 395,
+                                        lineNumber: 396,
                                         columnNumber: 3
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 391,
+                                lineNumber: 392,
                                 columnNumber: 3
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 372,
+                        lineNumber: 373,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -5208,21 +5213,21 @@ const Brom = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             "Designing the logo was a rather complex process, as I've tried a few different styles first.",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: " I have finally chosen a simple, minimalistic icon so it would be easily resizable to any format needed."
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 404,
+                                lineNumber: 405,
                                 columnNumber: 3
                             }, this),
                             " The icon represents a stylized blackberry since it is the symbol of the city of Bromberg. I've reduced it to a shape consisting of only a stroke and a cartoon-like face. The colors were chosen to match the overall app color palette."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 399,
+                        lineNumber: 400,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5248,7 +5253,7 @@ const Brom = ()=>{
                                 onContextMenu: (e)=>e.preventDefault()
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 413,
+                                lineNumber: 414,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -5261,7 +5266,7 @@ const Brom = ()=>{
                                 onContextMenu: (e)=>e.preventDefault()
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 414,
+                                lineNumber: 415,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -5274,7 +5279,7 @@ const Brom = ()=>{
                                 onContextMenu: (e)=>e.preventDefault()
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 415,
+                                lineNumber: 416,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -5287,13 +5292,13 @@ const Brom = ()=>{
                                 onContextMenu: (e)=>e.preventDefault()
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 416,
+                                lineNumber: 417,
                                 columnNumber: 1
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 408,
+                        lineNumber: 409,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5316,7 +5321,7 @@ const Brom = ()=>{
                                 children: "Logo Version 1"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 424,
+                                lineNumber: 425,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5324,7 +5329,7 @@ const Brom = ()=>{
                                 children: "Logo Version 2"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 425,
+                                lineNumber: 426,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5332,7 +5337,7 @@ const Brom = ()=>{
                                 children: "Sketch"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 426,
+                                lineNumber: 427,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5340,18 +5345,18 @@ const Brom = ()=>{
                                 children: "Final Logo"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 427,
+                                lineNumber: 428,
                                 columnNumber: 5
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 419,
+                        lineNumber: 420,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 430,
+                        lineNumber: 431,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h3, {
@@ -5365,11 +5370,11 @@ const Brom = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-20 font-Ovo font-semibold",
+                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-20 px-2 sm:px-0 md:px-0 font-Ovo font-semibold",
                         children: "Wireframes"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 432,
+                        lineNumber: 433,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5392,12 +5397,12 @@ const Brom = ()=>{
                             allowFullScreen: true
                         }, void 0, false, {
                             fileName: "[project]/app/components/Brom.jsx",
-                            lineNumber: 442,
+                            lineNumber: 443,
                             columnNumber: 1
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 438,
+                        lineNumber: 439,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5425,11 +5430,11 @@ const Brom = ()=>{
                                     duration: 0.5,
                                     delay: 0.3
                                 },
-                                className: "flex items-end gap-2 text-2xl md:text-2xl mb-6 mt-12 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
+                                className: "flex items-end gap-2 text-2xl md:text-2xl mb-6 mt-12 px-2 sm:px-0 md:px-0 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]",
                                 children: "05 / Test"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 452,
+                                lineNumber: 453,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -5443,21 +5448,21 @@ const Brom = ()=>{
                                     duration: 0.5,
                                     delay: 0.7
                                 },
-                                className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                                className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                                 children: [
                                     "After creating the wireframes, it was time to conduct the usability testing.",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                         children: " Four participants were chosen to test the core features of the app, including interacting with the virtual assistant."
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 462,
+                                        lineNumber: 463,
                                         columnNumber: 1
                                     }, this),
                                     " The overall user experience was positive, but the following points needed to be considered and optimized:"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 457,
+                                lineNumber: 458,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -5471,20 +5476,20 @@ const Brom = ()=>{
                                     duration: 0.5,
                                     delay: 0.7
                                 },
-                                className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                                className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                                 children: [
                                     "• Participants faced dissatisfaction when they realized they can't edit or undo their previously added input. That's why ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                         children: "I integrated an edit button, as well as an undo button."
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 470,
+                                        lineNumber: 471,
                                         columnNumber: 42
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 465,
+                                lineNumber: 466,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -5498,20 +5503,20 @@ const Brom = ()=>{
                                     duration: 0.6,
                                     delay: 0.9
                                 },
-                                className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                                className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                                 children: [
                                     "• Not receiving any kind of status feedback from the system while waiting confused some participants. ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                         children: " I made sure to incorporate loading animations to update the user while their request is being processed."
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 477,
+                                        lineNumber: 478,
                                         columnNumber: 1
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 472,
+                                lineNumber: 473,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -5525,20 +5530,20 @@ const Brom = ()=>{
                                     duration: 0.7,
                                     delay: 1.1
                                 },
-                                className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                                className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                                 children: [
                                     "• The close button has been removed from the top right corner since users didn't recognize it. ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                         children: ' Instead, I went for the "Cancel" option under the main button. The applying process for events was also confusing at first.'
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Brom.jsx",
-                                        lineNumber: 484,
+                                        lineNumber: 485,
                                         columnNumber: 1
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 479,
+                                lineNumber: 480,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5562,18 +5567,18 @@ const Brom = ()=>{
                                     onContextMenu: (e)=>e.preventDefault()
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Brom.jsx",
-                                    lineNumber: 490,
+                                    lineNumber: 491,
                                     columnNumber: 1
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Brom.jsx",
-                                lineNumber: 486,
+                                lineNumber: 487,
                                 columnNumber: 1
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Brom.jsx",
-                        lineNumber: 447,
+                        lineNumber: 448,
                         columnNumber: 1
                     }, this)
                 ]
@@ -7617,7 +7622,7 @@ const Bromberg = ()=>{
                     duration: 0.5,
                     delay: 0.3
                 },
-                className: "text-center text-5xl font-Ovo mt-20",
+                className: "text-center text-5xl font-Ovo mt-8",
                 children: "Bromberg Website"
             }, void 0, false, {
                 fileName: "[project]/app/components/Bromberg.jsx",
@@ -7682,7 +7687,7 @@ const Bromberg = ()=>{
                     duration: 0.5,
                     delay: 0.3
                 },
-                className: "inline-flex text-center grid grid-cols-3 sm:grid-cols-auto max-w-4xl mx-auto text-lg sm:text-lg justify-center gap-1 px-1 my-10",
+                className: "inline-flex text-center grid grid-cols-1 sm:grid-cols-3 max-w-4xl mx-auto text-lg sm:text-lg justify-center gap-1 px-1 my-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
@@ -7804,7 +7809,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
                         children: "Project Overview "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -7822,14 +7827,14 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "Bromberg is a city where history, cultural traditions, and modern, eco-conscious governance intersect. "
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Bromberg.jsx",
                                 lineNumber: 82,
-                                columnNumber: 68
+                                columnNumber: 97
                             }, this),
                             "In response to the unpredictable events of recent years – such as the economic crisis and the pandemic – the city has developed a new urban strategy aimed at minimizing future risks. With a strong focus on its citizens, Bromberg has created a secure and enduring digital space that remains accessible regardless of any ongoing challenges. ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -7877,7 +7882,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
                         children: "Project Goals "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -7895,14 +7900,14 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "Create a responsive website that serves all stakeholders, whether tourists or citizens. "
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Bromberg.jsx",
                                 lineNumber: 103,
-                                columnNumber: 68
+                                columnNumber: 97
                             }, this),
                             "It should offer a wide range of features, from digitalized town services to hotel bookings. Design a clean interface with an accessible navigation bar and direct user flows. ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -8103,7 +8108,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl sm:text-2xl mb-3 mt-8 font-Ovo font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
                         children: "01 / Empathize "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8121,7 +8126,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: "To better understand and meet user needs, but at the same time to avoid their major pain points, I directly dived into conducting user interviews. The outcome of the interviews is supposed to give an insight on all the similarities and differences of the interviewed participants. The interviews should help in deciding which further direction the research will go."
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8141,7 +8146,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-6 mt-12 font-Ovo font-semibold",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold",
                         children: "User Interviews "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8159,14 +8164,14 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "I recruited 6 participants of different demographics"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Bromberg.jsx",
                                 lineNumber: 150,
-                                columnNumber: 72
+                                columnNumber: 101
                             }, this),
                             " as to show the wide spectrum of needs our potential users could have. ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -8235,7 +8240,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: "After finishing the interviews, I started summarizing the results, noticing patterns and finally, analyzing the data. With the information I’ve collected, I was then able to create two user personas for the two participant groups."
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8295,7 +8300,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
                         children: "02 / Define "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8313,7 +8318,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: "Before starting the design process, my task is to research some paremeters that could further help me in defining what kind of product I am supposed to deliver. Since a lot of ideas can emerge during the research process, it is important to analyze those and compare them to what’s already working."
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8331,7 +8336,7 @@ const Bromberg = ()=>{
                             duration: 0.6,
                             delay: 0.9
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold",
                         children: "Competitive Analysis"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8349,7 +8354,7 @@ const Bromberg = ()=>{
                             duration: 0.6,
                             delay: 1.1
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             "It’s always important to stay on track with what direct and potential competitors offer.",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -8408,7 +8413,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold",
                         children: "Scope Matrix"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8426,7 +8431,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             "After understanding user needs and analyzing the competition, I went on to create a scope matrix.",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -8485,7 +8490,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold",
                         children: "Site Map"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8503,7 +8508,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: "The main website navigation should layout all categories and their sub-categories directly on the landing page since accessibility and usability are a top priority. Users would of course also have a optional possibility to search the website using the search bar."
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8557,7 +8562,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
                         children: "03 / Ideate "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8575,7 +8580,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: "In the previous steps, I have organized potential features and settled on a main navigation, so I am now able to create a task flow that will show a step-by-step guide to starting and finishing a task – in this case, booking a hotel. It’s useful to know where users could get stuck or how to bring them back to their path if they get lost during the booking process."
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8624,7 +8629,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold",
                         children: "Task Flow: Booking a hotel"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8671,7 +8676,7 @@ const Bromberg = ()=>{
                             duration: 0.6,
                             delay: 0.9
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold",
                         children: "Storyboarding"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8679,7 +8684,7 @@ const Bromberg = ()=>{
                         columnNumber: 2
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: "The final step of the research process was creating low-fidelity wireframes which I approached using the crazy 8’s technique. I’ve kept in mind that the design should be responsive, so I’ve worked with cards that are easily scalable, so they could transform based on the device. After a few rounds of brainstorming, I was able to select my favorite sketches and prepare them for prototyping."
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8733,7 +8738,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
                         children: "04 / Prototype "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -8751,7 +8756,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -8759,7 +8764,7 @@ const Bromberg = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Bromberg.jsx",
                                 lineNumber: 321,
-                                columnNumber: 69
+                                columnNumber: 98
                             }, this),
                             " Finding the right style proved to be a bit of challenge during this project. I didn't want the website to feel monochrome and have a complete serious appearance, but it proved to be difficult to shape a clean and cohesive design. I was studying various city websites and tried to take notes on all of the interesting elements they were offering."
                         ]
@@ -8803,7 +8808,7 @@ const Bromberg = ()=>{
                                         columnNumber: 3
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "border border-[#3F47D3] text-xl sm:text-lg px-4 py-4 rounded-lg w-[80%] sm:w-[78%] mt-2",
+                                        className: "border border-[#3F47D3] text-lg sm:text-lg px-4 py-4 rounded-lg w-[100%] sm:w-[78%] mt-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -8907,7 +8912,7 @@ const Bromberg = ()=>{
                                         columnNumber: 3
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "grid grid-cols-4 gap-2 mt-6",
+                                        className: "grid grid-cols-4 gap-2 mt-6 max-w-screen px-1",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                                 className: "bg-[#C3DE7B] rounded-lg px-8 py-10"
@@ -9007,7 +9012,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold",
                         children: "Wireframes"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -9025,14 +9030,14 @@ const Bromberg = ()=>{
                             duration: 0.6,
                             delay: 0.9
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "While creating the wireframes, I focused on the tourist group from my interviews. "
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Bromberg.jsx",
                                 lineNumber: 384,
-                                columnNumber: 68
+                                columnNumber: 97
                             }, this),
                             "The website is supposed to give them them the ultimate user experience – offering a wide range of options and letting them finish the booking process without having to interact with third-party websites. ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -9136,7 +9141,7 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.3
                         },
-                        className: "flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-20 font-Ovo font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
+                        className: "gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]",
                         children: "05 / Test "
                     }, void 0, false, {
                         fileName: "[project]/app/components/Bromberg.jsx",
@@ -9154,14 +9159,14 @@ const Bromberg = ()=>{
                             duration: 0.5,
                             delay: 0.7
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "I've conducted 1:1 interviews with three participants as part of my usability test. "
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Bromberg.jsx",
                                 lineNumber: 427,
-                                columnNumber: 68
+                                columnNumber: 97
                             }, this),
                             "There were a lot of points to focus on, so I devided the test into two parts: ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -9189,14 +9194,14 @@ const Bromberg = ()=>{
                             duration: 0.6,
                             delay: 0.9
                         },
-                        className: "sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed",
+                        className: "text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                 children: "The second part of my usability test focused on a certain task: the booking of a hotel."
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Bromberg.jsx",
                                 lineNumber: 437,
-                                columnNumber: 68
+                                columnNumber: 97
                             }, this),
                             " 2 out of 3 participants were positively surprised that they could complete the whole process, from start to finish, on the website. There weren't any major annoyances during the first two steps – everything seemed self-explanatory. One of the participants had feedback regarding the hotel page's room section. The infomation provided about each room was short, so I decided to add an interactive module with a longer description."
                         ]
@@ -9484,14 +9489,6 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                     }
                 }
             }["StyledModal.useEffect.handleKeyDown"];
-            const handleScroll = {
-                "StyledModal.useEffect.handleScroll": ()=>{
-                    // Show button when user scrolls down 300px
-                    if (modalRef.current) {
-                        setShowScrollButton(modalRef.current.scrollTop > 300);
-                    }
-                }
-            }["StyledModal.useEffect.handleScroll"];
             document.addEventListener('keydown', handleKeyDown);
             return ({
                 "StyledModal.useEffect": ()=>document.removeEventListener('keydown', handleKeyDown)
@@ -9500,6 +9497,41 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
     }["StyledModal.useEffect"], [
         closeModal
     ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "StyledModal.useEffect": ()=>{
+            if (isOpen) {
+                // Trigger layout recalculation
+                window.dispatchEvent(new Event('resize'));
+            }
+            return ({
+                "StyledModal.useEffect": ()=>{}
+            })["StyledModal.useEffect"];
+        }
+    }["StyledModal.useEffect"], [
+        isOpen
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "StyledModal.useEffect": ()=>{
+            const handleScroll = {
+                "StyledModal.useEffect.handleScroll": ()=>{
+                    if (modalRef.current) {
+                        setShowScrollButton(modalRef.current.scrollTop > 300);
+                    }
+                }
+            }["StyledModal.useEffect.handleScroll"];
+            const ref = modalRef.current;
+            if (ref) {
+                ref.addEventListener('scroll', handleScroll);
+            }
+            return ({
+                "StyledModal.useEffect": ()=>{
+                    if (ref) {
+                        ref.removeEventListener('scroll', handleScroll);
+                    }
+                }
+            })["StyledModal.useEffect"];
+        }
+    }["StyledModal.useEffect"], []);
     const renderProjectContent = ()=>{
         if (!currentProject) return null;
         switch(currentProject.id){
@@ -9508,7 +9540,7 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                     project: currentProject
                 }, void 0, false, {
                     fileName: "[project]/app/components/StyledModal.jsx",
-                    lineNumber: 40,
+                    lineNumber: 62,
                     columnNumber: 16
                 }, this);
             case 2:
@@ -9516,7 +9548,7 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                     project: currentProject
                 }, void 0, false, {
                     fileName: "[project]/app/components/StyledModal.jsx",
-                    lineNumber: 42,
+                    lineNumber: 64,
                     columnNumber: 16
                 }, this);
             case 3:
@@ -9524,7 +9556,7 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                     project: currentProject
                 }, void 0, false, {
                     fileName: "[project]/app/components/StyledModal.jsx",
-                    lineNumber: 44,
+                    lineNumber: 66,
                     columnNumber: 16
                 }, this);
             default:
@@ -9542,38 +9574,23 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
     if (!isOpen || !currentProject) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         ref: modalRef,
-        className: `fixed inset-0 z-50 flex flex-col 
-        ${isDarkMode ? 'bg-[#111111] text-white' : 'bg-white text-gray-700'}
-        overflow-y-auto`,
+        className: `fixed inset-0 z-50 flex flex-col transform-gpu overflow-y-auto
+        ${isDarkMode ? 'bg-[#111111] text-white' : 'bg-white text-gray-700'}`,
         children: [
             showScrollButton && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: scrollToTop,
-                className: `fixed bottom-8 right-8 z-50 p-3 rounded-full shadow-lg transition-all duration-300 hover:transform hover:scale-110
+                className: `fixed bottom-8 right-8 z-50 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110
             ${isDarkMode ? 'bg-gray-800 text-white hover:bg-gray-700' : 'bg-white text-gray-800 hover:bg-gray-100'}`,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                    xmlns: "http://www.w3.org/2000/svg",
-                    className: "h-6 w-6",
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    stroke: "currentColor",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                        strokeLinecap: "round",
-                        strokeLinejoin: "round",
-                        strokeWidth: 2,
-                        d: "M5 15l7-7 7 7"
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/StyledModal.jsx",
-                        lineNumber: 85,
-                        columnNumber: 13
-                    }, this)
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUp$3e$__["ArrowUp"], {
+                    size: 20
                 }, void 0, false, {
                     fileName: "[project]/app/components/StyledModal.jsx",
-                    lineNumber: 78,
+                    lineNumber: 98,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/StyledModal.jsx",
-                lineNumber: 71,
+                lineNumber: 91,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -9582,19 +9599,19 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                 isDarkMode: isDarkMode,
                 setIsDarkMode: setIsDarkMode,
                 modalRef: modalRef,
-                className: "md:bg-white dark:bg-[#111111] sm:bg-white dark:bg-[#111111]"
+                className: "md:bg-white dark:bg-[#111111] sm:bg-white dark:bg-[#111111] shadow-none border-none"
             }, void 0, false, {
                 fileName: "[project]/app/components/StyledModal.jsx",
-                lineNumber: 95,
-                columnNumber: 1
+                lineNumber: 102,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex-1 pt-24 p-4 sm:p-8 sm:mx-20",
                 children: renderProjectContent()
             }, void 0, false, {
                 fileName: "[project]/app/components/StyledModal.jsx",
-                lineNumber: 106,
-                columnNumber: 7
+                lineNumber: 111,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed hidden lg:block sm:top-[180px] sm:left-[130px] sm:z-50",
@@ -9605,46 +9622,17 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                         size: 20
                     }, void 0, false, {
                         fileName: "[project]/app/components/StyledModal.jsx",
-                        lineNumber: 115,
-                        columnNumber: 5
+                        lineNumber: 120,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/StyledModal.jsx",
-                    lineNumber: 111,
-                    columnNumber: 7
+                    lineNumber: 116,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/StyledModal.jsx",
-                lineNumber: 110,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed bottom-6 right-6 z-50",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    onClick: ()=>{
-                        if (modalRef.current) {
-                            modalRef.current.scrollTo({
-                                top: 0,
-                                behavior: 'smooth'
-                            });
-                        }
-                    },
-                    className: "p-3 rounded-full bg-gray-800 text-white hover:bg-gray-700 shadow-lg dark:bg-white dark:text-black",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUp$3e$__["ArrowUp"], {
-                        size: 20
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/StyledModal.jsx",
-                        lineNumber: 130,
-                        columnNumber: 5
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/app/components/StyledModal.jsx",
-                    lineNumber: 122,
-                    columnNumber: 3
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/app/components/StyledModal.jsx",
-                lineNumber: 119,
+                lineNumber: 115,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -9654,17 +9642,17 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                 setIsDarkMode: setIsDarkMode
             }, void 0, false, {
                 fileName: "[project]/app/components/StyledModal.jsx",
-                lineNumber: 134,
+                lineNumber: 124,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/StyledModal.jsx",
-        lineNumber: 62,
+        lineNumber: 84,
         columnNumber: 5
     }, this);
 };
-_s(StyledModal, "ZhDh1bd4u5Ci5Js7zIqPmpSxp8s=", false, function() {
+_s(StyledModal, "x+CYL+fvqaCbLwg4zQnJtAsp0Zc=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$modalStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
     ];
@@ -9686,14 +9674,15 @@ __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$assets$2f$assets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/assets/assets.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$StyledModal$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/StyledModal.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$modalStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/modalStore.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion/dist/es/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
+;
 ;
 ;
 ;
@@ -9735,7 +9724,7 @@ const Work = ()=>{
                 children: "Latest projects"
             }, void 0, false, {
                 fileName: "[project]/app/components/Work.jsx",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -9753,7 +9742,7 @@ const Work = ()=>{
                 children: "Here's a glimpse into some of my most recent projects. Dive in to see how I bring ideas to life through clean interfaces, meaningful interactions, and a strong attention to detail."
             }, void 0, false, {
                 fileName: "[project]/app/components/Work.jsx",
-                lineNumber: 24,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -9786,7 +9775,7 @@ const Work = ()=>{
                                     className: "absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Work.jsx",
-                                    lineNumber: 47,
+                                    lineNumber: 48,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9799,7 +9788,7 @@ const Work = ()=>{
                                                     children: project.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/Work.jsx",
-                                                    lineNumber: 51,
+                                                    lineNumber: 52,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -9807,13 +9796,13 @@ const Work = ()=>{
                                                     children: project.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/Work.jsx",
-                                                    lineNumber: 52,
+                                                    lineNumber: 53,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/components/Work.jsx",
-                                            lineNumber: 50,
+                                            lineNumber: 51,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -9836,41 +9825,41 @@ const Work = ()=>{
                                                 className: "w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Work.jsx",
-                                                lineNumber: 61,
+                                                lineNumber: 62,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Work.jsx",
-                                            lineNumber: 55,
+                                            lineNumber: 56,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/Work.jsx",
-                                    lineNumber: 48,
+                                    lineNumber: 49,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, index, true, {
                             fileName: "[project]/app/components/Work.jsx",
-                            lineNumber: 39,
+                            lineNumber: 40,
                             columnNumber: 12
                         }, this)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$StyledModal$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/app/components/Work.jsx",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Work.jsx",
-                lineNumber: 33,
+                lineNumber: 34,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/Work.jsx",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 };
@@ -10169,7 +10158,9 @@ function Home() {
     const [isDarkMode, setIsDarkMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Home.useEffect": ()=>{
-            if (localStorage.theme === 'dark' || !('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            const theme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (theme === 'dark' || !theme && prefersDark) {
                 setIsDarkMode(true);
             } else {
                 setIsDarkMode(false);
@@ -10180,10 +10171,10 @@ function Home() {
         "Home.useEffect": ()=>{
             if (isDarkMode) {
                 document.documentElement.classList.add('dark');
-                localStorage.theme = 'dark';
+                localStorage.setItem('theme', 'dark');
             } else {
                 document.documentElement.classList.remove('dark');
-                localStorage.theme = 'dark';
+                localStorage.setItem('theme', 'light');
             }
         }
     }["Home.useEffect"], [
@@ -10197,49 +10188,49 @@ function Home() {
             }, void 0, false, {
                 fileName: "[project]/app/page.js",
                 lineNumber: 38,
-                columnNumber: 5
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Header$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 isDarkMode: isDarkMode
             }, void 0, false, {
                 fileName: "[project]/app/page.js",
                 lineNumber: 39,
-                columnNumber: 5
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$About$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 isDarkMode: isDarkMode
             }, void 0, false, {
                 fileName: "[project]/app/page.js",
                 lineNumber: 40,
-                columnNumber: 5
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Services$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 isDarkMode: isDarkMode
             }, void 0, false, {
                 fileName: "[project]/app/page.js",
                 lineNumber: 41,
-                columnNumber: 5
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Work$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 isDarkMode: isDarkMode
             }, void 0, false, {
                 fileName: "[project]/app/page.js",
                 lineNumber: 42,
-                columnNumber: 5
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Contact$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 isDarkMode: isDarkMode
             }, void 0, false, {
                 fileName: "[project]/app/page.js",
                 lineNumber: 43,
-                columnNumber: 5
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 isDarkMode: isDarkMode
             }, void 0, false, {
                 fileName: "[project]/app/page.js",
                 lineNumber: 44,
-                columnNumber: 5
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$StyledModal$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 isDarkMode: isDarkMode,
@@ -10247,7 +10238,7 @@ function Home() {
             }, void 0, false, {
                 fileName: "[project]/app/page.js",
                 lineNumber: 45,
-                columnNumber: 5
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true);

@@ -1,9 +1,10 @@
-import React from 'react';
-import { assets, workData } from '../../assets/assets';
+import { workData, assets } from '../../assets/assets';
 import Image from 'next/image';
-import StyledModal from './StyledModal';
+import React from 'react';
+import Modal from './StyledModal';
 import useModalStore from './modalStore';
 import { motion } from 'motion/react';
+import StyledModal from './StyledModal';
 
 const Work = () => {
   const openModal = useModalStore((state) => state.openModal);

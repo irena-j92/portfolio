@@ -4,9 +4,6 @@ import { project } from '../project/project';
 import { assets } from '../../assets/assets';
 import iframe from 'iframe';
 import { motion } from 'motion/react';
-import { useRouter } from 'next/navigation';
-import MobileImage from './MobileImage';
-import ResponsiveImageModal from './ResponsiveImageModal'
 
 const Brom = () => {
   return (
