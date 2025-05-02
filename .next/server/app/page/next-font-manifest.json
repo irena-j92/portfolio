@@ -2,10 +2,10 @@
   "pages": {},
   "app": {
     "[project]/app/page": [
-      "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.17653016.woff2",
-      "static/media/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4vEZmqacG1Koy1-s.p.bcc1892c.woff2",
       "static/media/yYLl0h7WyfzTzI443XaFxQ-s.p.b5743500.woff2",
-      "static/media/pxiEyp8kv8JHgFVrJJfecnFHGPc-s.p.c336a9d1.woff2"
+      "static/media/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4vEZmqacG1Koy1-s.p.bcc1892c.woff2",
+      "static/media/pxiEyp8kv8JHgFVrJJfecnFHGPc-s.p.c336a9d1.woff2",
+      "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.17653016.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

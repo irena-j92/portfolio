@@ -9540,7 +9540,7 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                     project: currentProject
                 }, void 0, false, {
                     fileName: "[project]/app/components/StyledModal.jsx",
-                    lineNumber: 62,
+                    lineNumber: 60,
                     columnNumber: 16
                 }, this);
             case 2:
@@ -9548,7 +9548,7 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                     project: currentProject
                 }, void 0, false, {
                     fileName: "[project]/app/components/StyledModal.jsx",
-                    lineNumber: 64,
+                    lineNumber: 62,
                     columnNumber: 16
                 }, this);
             case 3:
@@ -9556,7 +9556,7 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                     project: currentProject
                 }, void 0, false, {
                     fileName: "[project]/app/components/StyledModal.jsx",
-                    lineNumber: 66,
+                    lineNumber: 64,
                     columnNumber: 16
                 }, this);
             default:
@@ -9585,12 +9585,12 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                     size: 20
                 }, void 0, false, {
                     fileName: "[project]/app/components/StyledModal.jsx",
-                    lineNumber: 98,
+                    lineNumber: 96,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/StyledModal.jsx",
-                lineNumber: 91,
+                lineNumber: 89,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -9599,22 +9599,22 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
                 isDarkMode: isDarkMode,
                 setIsDarkMode: setIsDarkMode,
                 modalRef: modalRef,
-                className: "md:bg-white dark:bg-[#111111] sm:bg-white dark:bg-[#111111] shadow-none border-none"
+                className: "bg-white dark:bg-[#111111] shadow-none border-none"
             }, void 0, false, {
                 fileName: "[project]/app/components/StyledModal.jsx",
-                lineNumber: 102,
+                lineNumber: 100,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex-1 pt-24 p-4 sm:p-8 sm:mx-20",
+                className: "flex-1 pt-24 p-4 sm:p-6 md:p-8 sm:mx-6 md:mx-20",
                 children: renderProjectContent()
             }, void 0, false, {
                 fileName: "[project]/app/components/StyledModal.jsx",
-                lineNumber: 111,
-                columnNumber: 9
+                lineNumber: 110,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed hidden lg:block sm:top-[180px] sm:left-[130px] sm:z-50",
+                className: "fixed hidden lg:block top-[180px] left-[130px] z-50",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: closeModal,
                     className: "p-3 rounded-full bg-gray-800 text-white hover:bg-gray-700 shadow-lg dark:bg-white dark:text-black",
@@ -9648,7 +9648,7 @@ const StyledModal = ({ isDarkMode, setIsDarkMode })=>{
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/StyledModal.jsx",
-        lineNumber: 84,
+        lineNumber: 82,
         columnNumber: 5
     }, this);
 };

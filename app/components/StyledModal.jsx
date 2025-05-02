@@ -30,9 +30,7 @@ const StyledModal = ({ isDarkMode, setIsDarkMode }) => {
       // Trigger layout recalculation
       window.dispatchEvent(new Event('resize'));
     }
-
-      return () => {
-      };
+    return () => {};
   }, [isOpen]);
 
   useEffect(() => {
@@ -105,14 +103,16 @@ const StyledModal = ({ isDarkMode, setIsDarkMode }) => {
         isDarkMode={isDarkMode}
         setIsDarkMode={setIsDarkMode}
         modalRef={modalRef}
-        className="md:bg-white dark:bg-[#111111] sm:bg-white dark:bg-[#111111] shadow-none border-none"
+        className="bg-white dark:bg-[#111111] shadow-none border-none"
       />
 
-        <div className="flex-1 pt-24 p-4 sm:p-8 sm:mx-20">
-          {renderProjectContent()}
-        </div>
+      {/* Main content */}
+      <div className="flex-1 pt-24 p-4 sm:p-6 md:p-8 sm:mx-6 md:mx-20">
+        {renderProjectContent()}
+      </div>
 
-      <div className="fixed hidden lg:block sm:top-[180px] sm:left-[130px] sm:z-50">
+      {/* Close button (only visible on large screens) */}
+      <div className="fixed hidden lg:block top-[180px] left-[130px] z-50">
         <button
           onClick={closeModal}
           className="p-3 rounded-full bg-gray-800 text-white hover:bg-gray-700 shadow-lg dark:bg-white dark:text-black"
