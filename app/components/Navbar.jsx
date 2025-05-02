@@ -1,8 +1,8 @@
-import { assets } from '@/assets/assets';
+import { assets } from '../../assets/assets';
 import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
 
-const Navbar = ({ isDarkMode, setIsDarkMode, isModal = false, modalRef = null, onClose }) => {
+const Navbar = ({ isDarkMode, setIsDarkMode, isModal = false, modalRef = null, onClose, className = '' }) => {
   const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
 
@@ -76,8 +76,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode, isModal = false, modalRef = null, o
 
       {/* Navbar */}
       <nav className={`sticky top-0 w-full px-5 lg:px-8 xl:px-[8%] py-4
-        flex items-center justify-between z-50 ${isScroll ? 
-          "bg-white bg-opacity-100 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:bg-opacity-100" : ""}`}>
+  flex items-center justify-between z-50 ${isScroll ? 
+  "bg-white bg-opacity-100 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:bg-opacity-100" : ""} ${className}`}>
         
         {/* Logo */}
         <button onClick={() => handleNavigation("#top")}>
@@ -135,10 +135,10 @@ const Navbar = ({ isDarkMode, setIsDarkMode, isModal = false, modalRef = null, o
           {/* Mobile links */}
           {[
           { id: "#top", label: "Home" },
-          { id: "#about", label: "About me" },
+          { id: "#about", label: "About" },
           { id: "#services", label: "Services" },
-          { id: "#work", label: "My Work" },
-          { id: "#contact", label: "Contact me" }
+          { id: "#work", label: "Projects" },
+          { id: "#contact", label: "Contact" }
         ].map((item) => (
           <li key={item.id}>
             <button 

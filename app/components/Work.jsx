@@ -1,7 +1,7 @@
-import { workData, assets } from '@/assets/assets';
-import Image from 'next/image';
 import React from 'react';
-import Modal from './StyledModal';
+import { assets, workData } from '../../assets/assets';
+import Image from 'next/image';
+import StyledModal from './StyledModal';
 import useModalStore from './modalStore';
 import { motion } from 'motion/react';
 
@@ -64,7 +64,7 @@ const Work = () => {
             </div>
           </motion.div>
         ))}
-        <Modal />
+        <StyledModal />
       </motion.div>
     </motion.div>
   );

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { assets } from '@/assets/assets';
+import { assets } from '../../assets/assets';
 import Image from 'next/image';
 import Brom from './Brom';
 import Lastfm from './Lastfm';
@@ -98,7 +98,7 @@ const StyledModal = ({ isDarkMode, setIsDarkMode }) => {
   isDarkMode={isDarkMode} 
   setIsDarkMode={setIsDarkMode}
   modalRef={modalRef}
-  className="md:bg-white dark:bg-[#111111] sm:bg-white dark:bg-[#111111]"
+  className="bg-white dark:bg-[#111111] shadow-none border-none"
 />
 
       {/* Content */}
