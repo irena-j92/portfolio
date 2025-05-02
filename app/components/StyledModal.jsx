@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { assets } from '@/assets/assets';
+import { assets } from '../../assets/assets';
 import Image from 'next/image';
 import Brom from './Brom';
 import Lastfm from './Lastfm';
@@ -61,9 +61,8 @@ const StyledModal = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <div 
       ref={modalRef}
-      className={`fixed inset-0 z-50 flex flex-col 
-        ${isDarkMode ? 'bg-[#111111] text-white' : 'bg-white text-gray-700'}
-        overflow-y-auto`}   
+      className={`fixed inset-0 z-50 flex flex-col min-h-screen overflow-y-auto overflow-x-hidden
+        ${isDarkMode ? 'bg-[#111111] text-white' : 'bg-white text-gray-700'}`}      
     >
 
       {/* Scroll to top button */}
@@ -93,12 +92,12 @@ const StyledModal = ({ isDarkMode, setIsDarkMode }) => {
       )}
 
 <Navbar
-  isModal={true} 
+  isModal={false} 
   onClose={closeModal} 
   isDarkMode={isDarkMode} 
   setIsDarkMode={setIsDarkMode}
   modalRef={modalRef}
-  className="md:bg-white dark:bg-[#111111] sm:bg-white dark:bg-[#111111]"
+  className="bg-white dark:bg-[#111111]"
 />
 
       {/* Content */}

@@ -1,9 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import { project } from '../project/project';
-import { assets } from '@/assets/assets';
+import { assets } from '../../assets/assets';
 import iframe from 'iframe';
 import { motion } from 'motion/react';
+import { useRouter } from 'next/navigation';
+import MobileImage from './MobileImage';
+import ResponsiveImageModal from './ResponsiveImageModal'
 
 const Brom = () => {
   return (
@@ -18,7 +21,7 @@ const Brom = () => {
     initial={{opacity: 0, y: -20}}
     whileInView={{opacity: 1, y: 0}}
     transition={{duration: 0.5, delay: 0.3}}
-    className="text-center text-5xl font-Ovo mt-20">Brom AI Assistant</motion.h1>
+    className="text-center text-5xl font-Ovo mt-8">Brom AI Assistant</motion.h1>
     <motion.h4
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
@@ -36,7 +39,7 @@ const Brom = () => {
   initial={{opacity: 0, y: -20}}
   whileInView={{opacity: 1, y: 0}}
   transition={{duration: 0.5, delay: 0.3}}
-  className='inline-flex text-center grid grid-cols-3 sm:grid-cols-auto max-w-4xl mx-auto text-lg justify-center gap-1 px-1 my-10'>
+  className='inline-flex text-center grid grid-cols-1 sm:grid-cols-3 max-w-4xl mx-auto text-[15px] justify-center gap-1 px-1 my-10'>
   <div>
     <ul className='m-0 p-0 font-bold text-[#3F47D3] dark:text-[#B9BFF9]'>ROLE:</ul>
     <ul className='m-0 p-0'>Product Design (UX/UI)</ul>
@@ -65,9 +68,9 @@ whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
 className="max-w-4xl mx-auto space-y-6">
 
-<h3 className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>Project Overview </h3>
+<h3 className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>Project Overview </h3>
 
-<p className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'><b>Brom is a virtual AI assistant app answering all questions regarding the
+<p className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>Brom is a virtual AI assistant app answering all questions regarding the
 city of Bromberg.</b> Sustainability stands in the forefront of the city’s ideology and in this case, technology can help keeping the city „green“
 by lowering the amount of people driving through the city to finish administrative tasks. It would also help save time, so the residents of
 Bromberg could maintain a better life quality. <b>Citizens would be able to store important documents, view, edit and digitally sign them.
@@ -81,9 +84,9 @@ initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.6, delay: 0.9}}
 className="text-lg max-w-4xl mx-auto space-y-6">
-      <h3 className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>Project Goals </h3>
+      <h3 className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>Project Goals </h3>
 
-    <p className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'><b>The main project goal is to create an interactive app with an intuitive
+    <p className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>The main project goal is to create an interactive app with an intuitive
       user interface that will be a helpful tool for Bromberg’s stakeholders.</b> The app should offer a wide range of functions with the AI assistant in
       the center. You can ask questions by typing or through voice recordings and view your history. Besides helping users finish their tasks faster
       and answering their questions, the app should also serve as a storage for important documents and files. <b>Users should be able to verify their
@@ -133,12 +136,12 @@ className="text-lg max-w-4xl mx-auto space-y-6">
      initial={{opacity: 0, y: -20}}
      whileInView={{opacity: 1, y: 0}}
      transition={{duration: 0.5, delay: 0.3}}
-     className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-10 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>01 / Empathize </motion.h3>
+     className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-10 px-2 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>01 / Empathize </motion.h3>
      <motion.p
      initial={{opacity: 0}}
      whileInView={{opacity: 1}}
      transition={{duration: 0.5, delay: 0.7}}
-     className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'><b>The main theme of my research was the reception of AI by people. </b>
+     className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>The main theme of my research was the reception of AI by people. </b>
       The questions that were circulating in my mind were: Would the majority of Bromberg use this app? Would it be useful to integrate an AI Assistant
       or alternatively create an app where you have to navigate through all the content by yourself? One of the things I've found out is that 
       <b> experts encourage businesses to start developing and using their own AI assistants as they are efficient, time and money-saving helpers,
@@ -148,12 +151,12 @@ className="text-lg max-w-4xl mx-auto space-y-6">
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 0.6, delay: 0.9}}
-    className='flex items-end gap-2 text-2xl sm:text-lg md:text-2xl mb-3 mt-20 font-Ovo font-semibold'>User Interviews </motion.h4>
+    className='flex items-end gap-2 text-2xl sm:text-lg md:text-2xl mb-3 mt-20 px-2 sm:px-0 md: px-2 sm:px-0 md:px-0 font-Ovo font-semibold'>User Interviews </motion.h4>
     <motion.p
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 0.7, delay: 1.1}}
-    className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>The participants for the interviews were the same as for Bromberg’s website.
+    className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>The participants for the interviews were the same as for Bromberg’s website.
       Only this time, <b>the questions were more tech-oriented, helping me understand how technology affects the lives of the participants, how much they
       use it on daily basis and what their general thoughts on artificial intelligence is.</b> Most of them were open to finding out more about the topic while still expressing their
       concern over the impact of AI on our future. <b>For example, of the 14 participants, 47% were unsure who should be held accountable when mistakes
@@ -163,25 +166,25 @@ className="text-lg max-w-4xl mx-auto space-y-6">
       initial={{opacity: 0, y: -20}}
       whileInView={{opacity: 1, y: 0}}
       transition={{duration: 0.7, delay: 1.3}}
-      className='grid grid-cols-2 sm:grid-cols-4 gap-6 items-center'>
-      <div className='bg-[#3F47D3] rounded-[20px] px-4 py-6 mb-6 mt-4'>
+      className='grid grid-cols-2 sm:grid-cols-4 gap-2 md:gap-4 sm:gap-6 items-center'>
+      <div className='bg-[#3F47D3] rounded-[20px] px-4 py-6 mb-6 mt-4 max-w-screen'>
       <ul className='text-center text-white text-6xl sm:text-lg lg:text-[70px] md:text-2xl mt-8 font-Ovo'>75%</ul>
-      <ul className='text-center text-lg sm:text-sm text-white py-4'>fear losing their job <br />to artifical intelligence</ul>
+      <ul className='text-center text-sm md:text-sm sm:text-sm text-white py-4'>fear losing their job <br />to artifical intelligence</ul>
       </div>
 
-      <div className='bg-[#3F47D3] rounded-[20px] px-4 py-6 mb-6 mt-4'>
+      <div className='bg-[#3F47D3] rounded-[20px] px-4 py-6 mb-6 mt-4 max-w-screen'>
       <ul className='text-center text-white text-6xl sm:text-lg lg:text-[70px] md:text-2xl mt-8 font-Ovo'>56%</ul>
-      <ul className='text-center text-lg sm:text-sm text-white py-4'>fear relying too much<br />on this technology</ul>
+      <ul className='text-center text-sm md:text-sm sm:text-sm text-white py-4'>fear relying too much<br />on this technology</ul>
       </div>
 
       <div className='bg-[#3F47D3] rounded-[20px] px-4 py-6 mb-6 mt-4'>
       <ul className='text-center text-white text-6xl sm:text-lg lg:text-[70px] md:text-2xl mt-8 font-Ovo'>70%</ul>
-      <ul className='text-center text-lg sm:text-sm text-white py-4'>think speeding up tasks<br />is a benefit</ul>
+      <ul className='text-center text-sm md:text-sm sm:text-sm text-white py-4'>think speeding up tasks<br />is a benefit</ul>
       </div>
 
       <div className='bg-[#3F47D3] rounded-[20px] px-4 py-6 mb-6 mt-4'>
       <ul className='text-center text-white text-6xl sm:text-lg lg:text-[70px] md:text-2xl mt-8 font-Ovo'>62%</ul>
-      <ul className='text-center text-lg sm:text-sm text-white py-4'>encourage AI laws <br />and regulations</ul>
+      <ul className='text-center text-sm md:text-sm sm:text-sm text-white py-4'>encourage AI laws <br />and regulations</ul>
       </div>
       </motion.div>
 
@@ -189,7 +192,7 @@ className="text-lg max-w-4xl mx-auto space-y-6">
      initial={{opacity: 0}}
      whileInView={{opacity: 1}}
      transition={{duration: 0.7, delay: 1.5}}
-     className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold'>User Persona</motion.h3>
+     className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 px-2 sm:px-0 md:px-0 font-Ovo font-semibold'>User Persona</motion.h3>
 
     <motion.div
     initial={{opacity: 0, y: -20}}
@@ -197,26 +200,27 @@ className="text-lg max-w-4xl mx-auto space-y-6">
     transition={{duration: 0.7, delay: 1.7}}>
       <Image src={project.brom_tim} alt="Persona" width={1280} height={800} objectFit="cover" className="rounded-lg mx-auto"
       onContextMenu={(e) => e.preventDefault()} /></motion.div>
+        <ResponsiveImageModal />
 
 <motion.div
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
 className="max-w-4xl mx-auto space-y-6">
-<h3 className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>02 / Define</h3>
+<h3 className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 px-2 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>02 / Define</h3>
 </motion.div>
 
 <motion.h3
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold'>Competitive Analysis</motion.h3>
+className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 px-2 sm:px-0 md:px-0 font-Ovo font-semibold'>Competitive Analysis</motion.h3>
 
  <motion.p
  initial={{opacity: 0}}
  whileInView={{opacity: 1}}
  transition={{duration: 0.6, delay: 0.9}}
- className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>The AI industry is growing rapidly and there are a handful of AI apps to choose
+ className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>The AI industry is growing rapidly and there are a handful of AI apps to choose
  from. For my research I've chosen two well known assistants and a website extension of the Visit Helsinki website. <b>The criteria during my inspection
  of the competition were: user support and guides, outputs, inputs, transparency and speed.</b> Since the main point of having an assistant app is to
  help users, it is important to integrate suggestions and offer edit options inside the app. Viewing their chat history and adding bookmarks would also be
@@ -235,12 +239,12 @@ onContextMenu={(e) => e.preventDefault()} /></motion.div>
  initial={{opacity: 0, y: -20}}
  whileInView={{opacity: 1, y: 0}}
  transition={{duration: 0.5, delay: 0.3}}
- className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 font-Ovo font-semibold'>Affinity Mapping</motion.h3>
+ className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 px-2 sm:px-0 md:px-0 font-Ovo font-semibold'>Affinity Mapping</motion.h3>
  <motion.p
   initial={{opacity: 0}}
   whileInView={{opacity: 1}}
   transition={{duration: 0.5, delay: 0.7}}
- className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'><b>After wrapping up the competitive analysis, I started to brainstorm various ideas 
+ className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>After wrapping up the competitive analysis, I started to brainstorm various ideas 
   and possible features for the app.</b> I then sorted out the ones I wanted to focus on and divided them into different groups: UX & Usability, Accessibility, Community, 
   End goals and Bugs & Fixes. Since AI answers being slow is a common problem for various users, I wanted to give the issue special attention. <b>It was also 
   interesting to see if and how the other topics align with users' end goals.</b></motion.p>
@@ -262,12 +266,12 @@ onContextMenu={(e) => e.preventDefault()} /></motion.div>
    initial={{opacity: 0, y: -20}}
    whileInView={{opacity: 1, y: 0}}
    transition={{duration: 0.5, delay: 0.3}}
-   className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>03 / Ideate </motion.h3>
+   className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>03 / Ideate </motion.h3>
    <motion.p
    initial={{opacity: 0}}
    whileInView={{opacity: 1}}
    transition={{duration: 0.5, delay: 0.7}}
-   className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>I've created multiple task flows while working on this project, but I've chosen
+   className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>I've created multiple task flows while working on this project, but I've chosen
    two I want to focus on. The first one would be useful for citizens, since they would be able to complete a lot of stress-inducing tasks in the comfort
    of their own home. The second task flow was created for tourists or users who are using the app briefly to search up upcoming events and happenings.</motion.p>
    </motion.div>
@@ -283,7 +287,7 @@ onContextMenu={(e) => e.preventDefault()} /></motion.div>
   initial={{opacity: 0}}
   whileInView={{opacity: 1}}
   transition={{duration: 0.7, delay: 1.1}}
-  className='flex items-end gap-2 text-2xl md:text-2xl font-Ovo font-semibold'>Task Flow: Verifying your identity</motion.h3>
+  className='flex items-end gap-2 text-2xl md:text-2xl px-2 sm:px-0 md:px-0 font-Ovo font-semibold'>Task Flow: Verifying your identity</motion.h3>
 
 <motion.div
 initial={{opacity: 0}}
@@ -296,7 +300,7 @@ transition={{duration: 0.7, delay: 1.3}}>
  initial={{opacity: 0}}
  whileInView={{opacity: 1}}
  transition={{duration: 0.7, delay: 1.1}}
- className='flex items-end gap-2 text-2xl md:text-2xl mt-12 font-Ovo font-semibold'>Task Flow: Searching for events</motion.h3>
+ className='flex items-end gap-2 text-2xl md:text-2xl mt-12 px-2 sm:px-0 md:px-0 font-Ovo font-semibold'>Task Flow: Searching for events</motion.h3>
 
  <motion.div
   initial={{opacity: 0}}
@@ -309,7 +313,7 @@ transition={{duration: 0.7, delay: 1.3}}>
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
-className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>As shown in the examples above, task completion was reduced to the fewest possible
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>As shown in the examples above, task completion was reduced to the fewest possible
  steps. Instead of exploring the app with the help of a navigation or menu, the AI assistant allows the user to get straight to their goal. This makes the
  app easy for use and efficient.</motion.p>
 
@@ -317,12 +321,12 @@ className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>As shown in t
  initial={{opacity: 0}}
  whileInView={{opacity: 1}}
  transition={{duration: 0.5, delay: 0.7}}
- className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo font-semibold'>Storyboarding</motion.h3>
+ className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-Ovo font-semibold'>Storyboarding</motion.h3>
  <motion.p
   initial={{opacity: 0}}
   whileInView={{opacity: 1}}
   transition={{duration: 0.6, delay: 0.9}}
- className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>I was very excited for the storyboarding process, as designing an AI app was
+ className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>I was very excited for the storyboarding process, as designing an AI app was
  on my designer bucket list for some time. It was very challenging understanding the different aspects of the technology and its' complex nature. 
  There were so many aspects to consider while designing the app, so it took me a few tries before I was able to settle on one design.</motion.p>
 
@@ -344,12 +348,12 @@ className="max-w-4xl mx-auto space-y-6">
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
-className='flex items-end gap-2 text-2xl md:text-2xl mt-8 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>04 / Prototype</motion.h3>
+className='flex items-end gap-2 text-2xl md:text-2xl mt-8 px-2 sm:px-0 md:px-0 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>04 / Prototype</motion.h3>
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'><b>While building out my wireframes, I've worked with components and variants.</b>
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>While building out my wireframes, I've worked with components and variants.</b>
  I drew inspiration from various platforms and apps, but it was important to stay focused on the particular needs of Bromberg's stakeholders. After 
  creating low-fidelity wireframes, my biggest concerns were more of a technical nature. It was important to take some extra time to figure out how to 
  incorporate features like the face scan or ID verification. <b>Brom is a very powerful app and I'm sure that there will be even more useful features coming
@@ -360,12 +364,12 @@ className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'><b>While buil
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
-className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-20 font-Ovo font-semibold'>Style Guide</motion.h3>
+className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-20 px-2 sm:px-0 md:px-0 font-Ovo font-semibold'>Style Guide</motion.h3>
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>Bromberg's official color is a shade of pale indigo, so I've chosen it as the 
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>Bromberg's official color is a shade of pale indigo, so I've chosen it as the 
 primary app color. I've combined it with a pastel violet and different neutral colors. The typography is minimalistic and simple as well. 
 Alltogether, I ended up creating a simple, but seamless design that is easy understandable and accessible to everyone.</motion.p>
 
@@ -400,7 +404,7 @@ Alltogether, I ended up creating a simple, but seamless design that is easy unde
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>Designing the logo was a rather complex process, as I've tried a few different styles first.
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>Designing the logo was a rather complex process, as I've tried a few different styles first.
   <b> I have finally chosen a simple, minimalistic icon so it would be easily resizable to any format needed.</b> The icon represents a stylized blackberry since it is the symbol
   of the city of Bromberg. I've reduced it to a shape consisting of only a stroke and a cartoon-like face. The colors were chosen to match the overall app color palette.
 </motion.p>
@@ -433,7 +437,7 @@ className='grid grid-cols-2 sm:grid-cols-4 gap-10 mt-2 justify-between'>
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-20 font-Ovo font-semibold'>Wireframes</motion.h3>
+className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-20 px-2 sm:px-0 md:px-0 font-Ovo font-semibold'>Wireframes</motion.h3>
 
 <motion.div
 initial={{opacity: 0}}
@@ -453,12 +457,12 @@ className="max-w-4xl mx-auto space-y-6">
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
-className='flex items-end gap-2 text-2xl md:text-2xl mb-6 mt-12 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>05 / Test</motion.h3>
+className='flex items-end gap-2 text-2xl md:text-2xl mb-6 mt-12 px-2 sm:px-0 md:px-0 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>05 / Test</motion.h3>
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>After creating the wireframes, it was time to conduct the usability testing.
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>After creating the wireframes, it was time to conduct the usability testing.
 <b> Four participants were chosen to test the core features of the app, including interacting with the virtual assistant.</b> The overall user experience was
 positive, but the following points needed to be considered and optimized:</motion.p>
   
@@ -466,21 +470,21 @@ positive, but the following points needed to be considered and optimized:</motio
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>• Participants faced dissatisfaction when they realized they can't edit or undo
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>• Participants faced dissatisfaction when they realized they can't edit or undo
 their previously added input. That's why <b>I integrated an edit button, as well as an undo button.</b></motion.p>
 
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.6, delay: 0.9}}
-className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>• Not receiving any kind of status feedback from the system while waiting confused some participants. 
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>• Not receiving any kind of status feedback from the system while waiting confused some participants. 
 <b> I made sure to incorporate loading animations to update the user while their request is being processed.</b></motion.p>
 
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.7, delay: 1.1}}
-className='sm:text-lg lg:text-[15px] text-lg mt-6 leading-relaxed'>• The close button has been removed from the top right corner since users didn't recognize it. 
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>• The close button has been removed from the top right corner since users didn't recognize it. 
 <b> Instead, I went for the "Cancel" option under the main button. The applying process for events was also confusing at first.</b></motion.p>
 
 <motion.div
@@ -497,5 +501,6 @@ onContextMenu={(e) => e.preventDefault()} /></motion.div>
     </motion.div>
   )
 };
+
 
 export default Brom;

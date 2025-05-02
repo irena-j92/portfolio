@@ -1,6 +1,6 @@
-import { workData, assets } from '@/assets/assets';
-import Image from 'next/image';
 import React from 'react';
+import { assets, workData } from '../../assets/assets';
+import Image from 'next/image';
 import Modal from './StyledModal';
 import useModalStore from './modalStore';
 import { motion } from 'motion/react';
