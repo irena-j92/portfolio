@@ -32,6 +32,7 @@ const StyledModal = ({ isDarkMode, setIsDarkMode }) => {
     }
     return () => {};
   }, [isOpen]);
+  window.scrollTo(0, 0);
 
   useEffect(() => {
     const handleScroll = () => {
