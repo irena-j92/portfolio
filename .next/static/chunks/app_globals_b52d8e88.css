@@ -494,10 +494,6 @@ img, video {
   margin-top: 2rem;
 }
 
-.mt-0 {
-  margin-top: 0;
-}
-
 .block {
   display: block;
 }
@@ -1672,10 +1668,6 @@ img, video {
   .md\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0;
   }
 
   .md\:block {

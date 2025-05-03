@@ -29,10 +29,10 @@ const StyledModal = ({ isDarkMode, setIsDarkMode }) => {
     if (isOpen) {
       // Trigger layout recalculation
       window.dispatchEvent(new Event('resize'));
+      window.scrollTo(0, 0);
     }
     return () => {};
   }, [isOpen]);
-  window.scrollTo(0, 0);
 
   useEffect(() => {
     const handleScroll = () => {
