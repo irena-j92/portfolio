@@ -14,12 +14,11 @@ const Lastfm = () => {
     transition={{duration: 1}}
     className="text-lg">
 
-<br />
     <motion.h1
      initial={{opacity: 0, y: -20}}
      whileInView={{opacity: 1, y: 0}}
      transition={{duration: 0.5, delay: 0.3}}
-    className="text-center text-5xl font-Ovo mt-8">Last.fm Pro</motion.h1>
+    className="text-center text-5xl font-Ovo sm:mt-20">Last.fm Pro</motion.h1>
 
     <motion.h4
      initial={{opacity: 0}}

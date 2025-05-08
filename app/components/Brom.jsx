@@ -4,9 +4,6 @@ import { project } from '../project/project';
 import { assets } from '../../assets/assets';
 import iframe from 'iframe';
 import { motion } from 'motion/react';
-import { useRouter } from 'next/navigation';
-import MobileImage from './MobileImage';
-import ResponsiveImageModal from './ResponsiveImageModal'
 
 const Brom = () => {
   return (
@@ -16,12 +13,11 @@ const Brom = () => {
     transition={{duration: 1}}
     className="text-lg">
 
-<br />
     <motion.h1
     initial={{opacity: 0, y: -20}}
     whileInView={{opacity: 1, y: 0}}
     transition={{duration: 0.5, delay: 0.3}}
-    className="text-center text-5xl font-Ovo mt-8">Brom AI Assistant</motion.h1>
+    className="text-center text-5xl font-Ovo sm:mt-20">Brom AI Assistant</motion.h1>
     <motion.h4
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
