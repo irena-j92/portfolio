@@ -80,7 +80,7 @@ initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.6, delay: 0.9}}
 className="text-lg max-w-4xl mx-auto space-y-6">
-      <h3 className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>Project Goals </h3>
+      <h3 className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>Project Goals </h3>
 
     <p className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>The main project goal is to create an interactive app with an intuitive
       user interface that will be a helpful tool for Bromberg’s stakeholders.</b> The app should offer a wide range of functions with the AI assistant in
@@ -132,7 +132,7 @@ className="text-lg max-w-4xl mx-auto space-y-6">
      initial={{opacity: 0, y: -20}}
      whileInView={{opacity: 1, y: 0}}
      transition={{duration: 0.5, delay: 0.3}}
-     className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-10 px-2 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>01 / Empathize </motion.h3>
+     className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-10 px-2 sm:px-0 md:px-0 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>01 / Empathize </motion.h3>
      <motion.p
      initial={{opacity: 0}}
      whileInView={{opacity: 1}}
@@ -196,14 +196,13 @@ className="text-lg max-w-4xl mx-auto space-y-6">
     transition={{duration: 0.7, delay: 1.7}}>
       <Image src={project.brom_tim} alt="Persona" width={1280} height={800} objectFit="cover" className="rounded-lg mx-auto"
       onContextMenu={(e) => e.preventDefault()} /></motion.div>
-        <ResponsiveImageModal />
 
 <motion.div
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
 className="max-w-4xl mx-auto space-y-6">
-<h3 className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 px-2 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>02 / Define</h3>
+<h3 className='flex items-end gap-2 text-2xl md:text-2xl mb-3 mt-12 px-2 sm:px-0 md:px-0 font-Ovo font-semibold text-[#3F47D3] dark:text-[#B9BFF9]'>02 / Define</h3>
 </motion.div>
 
 <motion.h3
@@ -415,17 +414,6 @@ className='flex grid grid-cols-2 sm:grid-cols-4 gap-8 mt-20 justify-between'>
 <Image src={project.brom_sketch} alt="Sketch" width={200} height={200} objectFit="cover" className="rounded-lg mx-auto" onContextMenu={(e) => e.preventDefault()} />
 <Image src={project.brom_logo} alt="Final Logo" width={200} height={200} objectFit="cover" className="rounded-lg mx-auto" onContextMenu={(e) => e.preventDefault()} />
 </motion.div>
-
-<motion.div
-initial={{opacity: 0, y: -20}}
-whileInView={{opacity: 1, y: 0}}
-transition={{duration: 0.5, delay: 0.3}}
-className='grid grid-cols-2 sm:grid-cols-4 gap-10 mt-2 justify-between'>
-    <p className='text-center text-sm'>Logo Version 1</p>
-    <p className='text-center text-sm'>Logo Version 2</p>
-    <p className='text-center text-sm'>Sketch</p>
-    <p className='text-center text-sm'>Final Logo</p>
-  </motion.div>
 
 <br />
 

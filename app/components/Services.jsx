@@ -23,7 +23,7 @@ const Services = () => {
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 0.5, delay: 0.7}}
-      className='text-center max-w-2xl mx-auto mt-8 mb-12 font-Ovo'>
+      className='text-center max-w-2xl mx-auto mt-8 mb-12'>
       I thrive on staying updated with the latest design trends and continuously seek opportunities to enhance my skill set.
       My goal is to bridge the gap between users and technology, crafting interfaces that are both beautiful and functional.
       </motion.p>

@@ -11,8 +11,8 @@ const Header = ( {isDarkMode} ) => {
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
         className="mb-2">
-       <Image src={isDarkMode ? assets.illustration_white : assets.illustration_dark}
-       alt="illustration" width={380} height={380} />
+       <Image src={assets.profile_img}
+       alt="illustration" width={160} height={160} />
       </motion.div>
 
       <motion.h1
@@ -34,7 +34,7 @@ const Header = ( {isDarkMode} ) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6, delay: 0.7 }}
-      className='max-w-2xl mx-auto font-Ovo'>
+      className='max-w-2xl mx-auto'>
       I am an experienced designer with a focus on UX/UI design.
         <br />
         Explore, click, and have fun while you're here!

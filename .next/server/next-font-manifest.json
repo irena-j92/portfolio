@@ -1,1 +1,13 @@
-{"pages":{},"app":{"/Users/ruderschnecke/Desktop/portfolio/app/layout":["static/media/eafabf029ad39a43-s.p.woff2","static/media/07a54048a9278940-s.p.woff2","static/media/6003d19f21d09b15-s.p.woff2","static/media/ae4d5ec4250233e9-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}
+{
+  "app": {
+    "[project]/app/page": [
+      "static/media/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4vEZmqacG1Koy1-s.p.bcc1892c.woff2",
+      "static/media/yYLl0h7WyfzTzI443XaFxQ-s.p.b5743500.woff2",
+      "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.17653016.woff2",
+      "static/media/pxiEyp8kv8JHgFVrJJfecnFHGPc-s.p.c336a9d1.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

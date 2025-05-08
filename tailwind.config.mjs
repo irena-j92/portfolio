@@ -13,7 +13,7 @@ export default {
         darkTheme: '#111111', 
       },
       fontFamily: {
-        Outfit: ["Outfit", "sans-serif"],
+        Outfit: ["Inter", "sans-serif"],
         Ovo: ["Ovo", "serif"],
       },
       boxShadow: {

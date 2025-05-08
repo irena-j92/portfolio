@@ -17,19 +17,19 @@ const Bromberg = () => {
      initial={{opacity: 0, y: -20}}
      whileInView={{opacity: 1, y: 0}}
      transition={{duration: 0.5, delay: 0.3}}
-     className="text-center text-5xl font-Ovo sm:mt-20">Bromberg Website</motion.h1>
+     className="text-center text-6xl font-Ovo sm:mt-20">Bromberg Website</motion.h1>
 
     <motion.h4
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 0.5, delay: 0.7}}
-    className='text-center mt-2 text-lg font-Ovo'>A merging of sustainability and technology</motion.h4>
+    className='text-center mt-4 text-lg'>A merging of sustainability and technology</motion.h4>
 
     <motion.div
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 0.6, delay: 0.9}}>
-    <Image src={project.bromberg_hero} alt="Hero Image" width={900} height={800} objectFit="cover" className="rounded-xl mt-12 mx-auto"
+    <Image src={project.bromberg_hero} alt="Hero Image" width={900} height={800} objectFit="cover" className="mt-12 mx-auto"
     onContextMenu={(e) => e.preventDefault()} />
     
     </motion.div>
@@ -72,16 +72,16 @@ className="max-w-4xl mx-auto space-y-6">
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
-className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]'>Project Overview </motion.h3>
+className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium text-[#3F47D3] dark:text-[#C3DE7B]'>Project Overview </motion.h3>
 
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>Bromberg is a city where history, cultural traditions, and modern, eco-conscious governance intersect. </b>
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>Bromberg is a city where history, cultural traditions, and modern, eco-conscious governance intersect. 
 In response to the unpredictable events of recent years – such as the economic crisis and the pandemic – the city has developed a new urban strategy aimed
 at minimizing future risks. With a strong focus on its citizens, Bromberg has created a secure and enduring digital space that remains accessible
-regardless of any ongoing challenges. <b>The website serves as a reliable source of news and information while fostering community engagement and participation. </b>
+regardless of any ongoing challenges. The website serves as a reliable source of news and information while fostering community engagement and participation. 
 Visitors from afar and business partners are also welcomed, with dedicated sections ensuring they stay connected with Bromberg.</motion.p></motion.div>
 
 <motion.div
@@ -93,27 +93,27 @@ className="text-lg max-w-4xl mx-auto space-y-6">
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
-className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]'>Project Goals </motion.h3>
+className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium text-[#3F47D3] dark:text-[#C3DE7B]'>Project Goals </motion.h3>
 
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>Create a responsive website that serves all stakeholders, whether tourists or citizens. </b>
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>Create a responsive website that serves all stakeholders, whether tourists or citizens.
 It should offer a wide range of features, from digitalized town services to hotel bookings. Design a clean interface with an accessible navigation bar and direct user flows. 
-<b> The landing page should also reflect the newly developed strategy and keep the people of Bromberg at its center.</b></motion.p>
+The landing page should also reflect the newly developed strategy and keep the people of Bromberg at its center.</motion.p>
 </motion.div>
 
 <motion.div
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.6, delay: 0.9}}
-className='grid grid-cols-3 sm:grid-cols-5 gap-4 mt-12 mx-auto max-w-screen sm:w-[900px] text-[#111111]'>
-<ul className='bg-[#C3DE7B] rounded-[20px] items-center px-6 py-6'><p className="text-4xl font-Ovo">01</p> <p className="mt-6">Empathize</p></ul>
-<ul className='bg-[#C3DE7B] rounded-[20px] items-center px-6 py-6'><p className="text-4xl font-Ovo">02</p> <p className="mt-6">Define</p></ul>
-<ul className='bg-[#C3DE7B] rounded-[20px] items-center px-6 py-6'><p className="text-4xl font-Ovo">03</p> <p className="mt-6">Ideate</p></ul>
-<ul className='bg-[#C3DE7B] rounded-[20px] items-center px-6 py-6'><p className="text-4xl font-Ovo">04</p> <p className="mt-6">Prototype</p></ul>
-<ul className='bg-[#C3DE7B] rounded-[20px] items-center px-6 py-6'><p className="text-4xl font-Ovo">05</p> <p className="mt-6">Test</p></ul>
+className='grid grid-cols-2 sm:grid-cols-5 gap-4 mt-12 mx-auto max-w-screen sm:w-[900px] text-[#111111]'>
+<ul className='bg-[#C3DE7B] rounded-[20px] items-center px-6 py-6'><p className="text-5xl font-Ovo">01</p> <p className="mt-6">Empathize</p></ul>
+<ul className='bg-[#C3DE7B] rounded-[20px] items-center px-6 py-6'><p className="text-5xl font-Ovo">02</p> <p className="mt-6">Define</p></ul>
+<ul className='bg-[#C3DE7B] rounded-[20px] items-center px-6 py-6'><p className="text-5xl font-Ovo">03</p> <p className="mt-6">Ideate</p></ul>
+<ul className='bg-[#C3DE7B] rounded-[20px] items-center px-6 py-6'><p className="text-5xl font-Ovo">04</p> <p className="mt-6">Prototype</p></ul>
+<ul className='bg-[#C3DE7B] rounded-[20px] items-center px-6 py-6'><p className="text-5xl font-Ovo">05</p> <p className="mt-6">Test</p></ul>
 </motion.div>
 
   <br />
@@ -128,7 +128,7 @@ className='grid grid-cols-3 sm:grid-cols-5 gap-4 mt-12 mx-auto max-w-screen sm:w
     initial={{opacity: 0, y: -20}}
     whileInView={{opacity: 1, y: 0}}
     transition={{duration: 0.5, delay: 0.3}}
-    className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]'>01 / Empathize </motion.h3>
+    className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium text-[#3F47D3] dark:text-[#C3DE7B]'>01 / Empathize </motion.h3>
     <motion.p
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
@@ -141,14 +141,14 @@ className='grid grid-cols-3 sm:grid-cols-5 gap-4 mt-12 mx-auto max-w-screen sm:w
     initial={{opacity: 0, y: -20}}
     whileInView={{opacity: 1, y: 0}}
     transition={{duration: 0.5, delay: 0.3}}
-    className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold'>User Interviews </motion.h4>
+    className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium'>User Interviews </motion.h4>
     <motion.p
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 0.5, delay: 0.7}}
-    className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>I recruited 6 participants of different demographics</b> as to show the wide spectrum of needs our
-    potential users could have. <b>All participants shared a love for outdoor activities and showed a strong developed sensibility for sustainability and ecology.
-    Furthermore, they all showed interest in digitalization and technology</b> as a tool for connecting people, minimizing their everyday stress and need for time
+    className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>I recruited 6 participants of different demographics as to show the wide spectrum of needs our
+    potential users could have. All participants shared a love for outdoor activities and showed a strong developed sensibility for sustainability and ecology.
+    Furthermore, they all showed interest in digitalization and technology as a tool for connecting people, minimizing their everyday stress and need for time
     management. One group of participants was approached as citizens, while the other group was considered as tourists.</motion.p>
 
    <br />
@@ -158,7 +158,7 @@ className='grid grid-cols-3 sm:grid-cols-5 gap-4 mt-12 mx-auto max-w-screen sm:w
   whileInView={{opacity: 1}}
   transition={{duration: 0.6, delay: 0.9}}>
   <Image src={project.bromberg_melanie} alt="Persona Melanie" width={1280} height={800} objectFit="cover"
-  className="rounded-lg mx-auto mt-8" onContextMenu={(e) => e.preventDefault()} /></motion.div>
+  className="mx-auto mt-8" onContextMenu={(e) => e.preventDefault()} /></motion.div>
 
   <br />
 
@@ -175,7 +175,7 @@ className='grid grid-cols-3 sm:grid-cols-5 gap-4 mt-12 mx-auto max-w-screen sm:w
      initial={{opacity: 0}}
      whileInView={{opacity: 1}}
      transition={{duration: 0.5, delay: 0.7}}>
-    <Image src={project.bromberg_ulrike} alt="Persona Ulrike" width={1280} height={800} objectFit="cover" className="rounded-lg mx-auto"
+    <Image src={project.bromberg_ulrike} alt="Persona Ulrike" width={1280} height={800} objectFit="cover" className="mx-auto"
      onClick={() => setIsOpen(true)} onContextMenu={(e) => e.preventDefault()} /></motion.div>
 
       <br />
@@ -184,7 +184,7 @@ className='grid grid-cols-3 sm:grid-cols-5 gap-4 mt-12 mx-auto max-w-screen sm:w
     initial={{opacity: 0, y: -20}}
     whileInView={{opacity: 1, y: 0}}
     transition={{duration: 0.5, delay: 0.3}}
-    className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]'>02 / Define </motion.h3>
+    className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium text-[#3F47D3] dark:text-[#C3DE7B]'>02 / Define </motion.h3>
     <motion.p
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
@@ -197,49 +197,49 @@ className='grid grid-cols-3 sm:grid-cols-5 gap-4 mt-12 mx-auto max-w-screen sm:w
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 0.6, delay: 0.9}}
-    className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold'>Competitive Analysis</motion.h3>
+    className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium'>Competitive Analysis</motion.h3>
 
     <motion.p
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 0.6, delay: 1.1}}
     className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>It’s always important to stay on track with what direct and potential competitors offer.
-    <b> In this case, the center of the focus was on usability, accessibility, design, content and booking.</b> By comparing different competitors with each
+    In this case, the center of the focus was on usability, accessibility, design, content and booking. By comparing different competitors with each
     other and finally to our research takeaways, I was one step closer to deliver a efficient product that is both, up-to-date and aesthetically pleasing.</motion.p>
 
     <motion.div
      initial={{opacity: 0}}
      whileInView={{opacity: 1}}
     transition={{duration: 0.6, delay: 1.1}}>
-    <Image src={project.bromberg_competitive} alt="Competitive Analysis" width={1280} height={800} objectFit="cover" className="rounded-lg mx-auto"
+    <Image src={project.bromberg_competitive} alt="Competitive Analysis" width={1280} height={800} objectFit="cover" className="mx-auto"
     onContextMenu={(e) => e.preventDefault()} /></motion.div>
 
 <motion.h3
  initial={{opacity: 0, y: -20}}
  whileInView={{opacity: 1, y: 0}}
  transition={{duration: 0.5, delay: 0.3}}
-className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold'>Scope Matrix</motion.h3>
+className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium'>Scope Matrix</motion.h3>
 
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
 className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>After understanding user needs and analyzing the competition, I went on to create a scope matrix.
-<b> I've listed all the requirements the city of Bromberg, their citizens and other stakeholders (in this case tourists) would have.</b> That helped me figure out what 
+ I've listed all the requirements the city of Bromberg, their citizens and other stakeholders (in this case tourists) would have. That helped me figure out what 
   possible features I could implement on the website and rated each of them by priority and business value.</motion.p>
 
 <motion.div
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.6, delay: 0.9}}>
-<Image src={project.bromberg_scope} alt="Scope Matrix" width={1280} height={800} objectFit="cover" className="rounded-lg mx-auto"
+<Image src={project.bromberg_scope} alt="Scope Matrix" width={1280} height={800} objectFit="cover" className="mx-auto"
 onContextMenu={(e) => e.preventDefault()} /></motion.div>
 
 <motion.h3
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
-className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold'>Site Map</motion.h3>
+className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium'>Site Map</motion.h3>
 
 <motion.p
 initial={{opacity: 0}}
@@ -253,7 +253,7 @@ search bar.</motion.p>
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.6, delay: 0.9}}>
-<Image src={project.bromberg_sitemap} alt="Sitemap" width={1280} height={800} objectFit="cover" className="rounded-lg mx-auto"
+<Image src={project.bromberg_sitemap} alt="Sitemap" width={1280} height={800} objectFit="cover" className="mx-auto"
 onContextMenu={(e) => e.preventDefault()} /></motion.div>
 
   <br />
@@ -262,7 +262,7 @@ onContextMenu={(e) => e.preventDefault()} /></motion.div>
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
-className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]'>03 / Ideate </motion.h3>
+className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium text-[#3F47D3] dark:text-[#C3DE7B]'>03 / Ideate </motion.h3>
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
@@ -275,26 +275,26 @@ them back to their path if they get lost during the booking process.</motion.p>
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.6, delay: 0.9}}>
-<Image src={project.bromberg_legend} alt="Legend" width={600} height={800} objectFit="cover" className="rounded-lg mx-auto"
+<Image src={project.bromberg_legend} alt="Legend" width={600} height={800} objectFit="cover" className="mx-auto"
 onContextMenu={(e) => e.preventDefault()} /></motion.div>
 
 <motion.h3
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
-className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold'>Task Flow: Booking a hotel</motion.h3>
+className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium'>Task Flow: Booking a hotel</motion.h3>
 <motion.div
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}>
-<Image src={project.bromberg_flow} alt="Task Flow" width={1440} height={900} objectFit="cover" className="rounded-lg mx-auto"
+<Image src={project.bromberg_flow} alt="Task Flow" width={1440} height={900} objectFit="cover" className="mx-auto"
  onContextMenu={(e) => e.preventDefault()} /></motion.div>
 
  <motion.h3
  initial={{opacity: 0}}
  whileInView={{opacity: 1}}
  transition={{duration: 0.6, delay: 0.9}}
- className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold'>Storyboarding</motion.h3>
+ className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium'>Storyboarding</motion.h3>
  <p className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>The final step of the research process was creating low-fidelity wireframes which I approached
  using the crazy 8’s technique. I’ve kept in mind that the design should be responsive, so I’ve worked with cards that are easily scalable, so they could
  transform based on the device. After a few rounds of brainstorming, I was able to select my favorite sketches and prepare them for prototyping.</p>
@@ -303,7 +303,7 @@ transition={{duration: 0.5, delay: 0.7}}>
  initial={{opacity: 0}}
  whileInView={{opacity: 1}}
  transition={{duration: 0.6, delay: 1.1}}>
-<Image src={project.bromberg_sketches} alt="Sketches" width={860} height={400} objectFit="cover" className="mx-auto items-center mt-2 rounded-lg"
+<Image src={project.bromberg_sketches} alt="Sketches" width={860} height={400} objectFit="cover" className="mx-auto items-center mt-2"
 onContextMenu={(e) => e.preventDefault()} /></motion.div>
 
 <br />
@@ -312,13 +312,13 @@ onContextMenu={(e) => e.preventDefault()} /></motion.div>
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
-className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]'>04 / Prototype </motion.h3>
+className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium text-[#3F47D3] dark:text-[#C3DE7B]'>04 / Prototype </motion.h3>
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'> <b>My role during this stage was to curate all user interface elements: the imagery,
-typography, and color palette.</b> Finding the right style proved to be a bit of challenge during this project. I didn't want the website to feel monochrome and 
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'> My role during this stage was to curate all user interface elements: the imagery,
+typography, and color palette. Finding the right style proved to be a bit of challenge during this project. I didn't want the website to feel monochrome and 
 have a complete serious appearance, but it proved to be difficult to shape a clean and cohesive design. I was studying various city websites and tried to 
 take notes on all of the interesting elements they were offering.</motion.p>
 
@@ -375,17 +375,19 @@ take notes on all of the interesting elements they were offering.</motion.p>
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold'>Wireframes</motion.h3>
+className='gap-2 text-2xl md:text-2xl sm:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium'>Wireframes</motion.h3>
+
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.6, delay: 0.9}}
-className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>While creating the wireframes, I focused on the tourist group from my interviews. </b>
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>While creating the wireframes, I focused on the tourist group from my interviews.
 The website is supposed to give them them the ultimate user experience – offering a wide range of options and letting them finish the booking process without 
-having to interact with third-party websites. <b>The process should be straight-forward with a simple interface that is easy to understand and navigate. </b> 
+having to interact with third-party websites. The process should be straight-forward with a simple interface that is easy to understand and navigate. 
 Besides the obvious check-in options, I could imagine that some users would like to take their time to explore the website and that's why I listed a few 
 accomodation categories on the booking page below. The versatile filter options are supposed to help the user find the perfect match as easy as possible.</motion.p>
 
+{/*
 <motion.div
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
@@ -394,22 +396,64 @@ transition={{duration: 0.5, delay: 0.3}}>
  className="flex items-center justify-center mx-auto mt-10 rounded-[16px] w-full h-[500px] sm:h-[800px] md:h-[600px] lg:h-[500px]"
  frameBorder="0" width="100%" height="840px"
  allowFullScreen></iframe>
-</motion.div>
+</motion.div>*/}
+
+<Image src={project.bromberg_devices} alt="Devices" width={1000} height={400} objectFit="cover" className="mx-auto items-center mt-2"
+onContextMenu={(e) => e.preventDefault()} />
 
 <motion.div
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className="flex justify-center mt-8">
+className="flex justify-center mt-8 mb-8 gap-6">
 <a href="https://www.figma.com/proto/JmksAbnqYdjy1qYRBdH1hk/Bromberg-2025?node-id=224-667&t=rnjagiIjBntdxlct-1&scaling=scale-down&content-scaling=fixed&page-id=5%3A2"
 target="_blank" 
 rel="noopener noreferrer"
-className='inline-flex items-center justify-center gap-3 px-6  
-py-2 rounded-full font-Ovo bg-[#3F47D3] text-white w-auto'>
+className='inline-flex items-center justify-center gap-3 px-8  
+py-4 rounded-full border border-white hover hover:bg-[#3F47D3] hover:border-none bg-[#111111] text-white text-lg w-auto'>
+Final prototype
+<Image src={assets.right_arrow_white} alt="right arrow" className='w-5' />
+</a>
+
+<a href="https://www.figma.com/proto/JmksAbnqYdjy1qYRBdH1hk/Bromberg-2025?node-id=224-667&t=rnjagiIjBntdxlct-1&scaling=scale-down&content-scaling=fixed&page-id=5%3A2"
+target="_blank" 
+rel="noopener noreferrer"
+className='inline-flex items-center justify-center gap-3 px-8  
+py-4 rounded-full border border-white hover hover:bg-[#3F47D3] hover:border-none bg-[#111111] text-white text-lg w-auto'>
 Mobile prototype
 <Image src={assets.right_arrow_white} alt="right arrow" className='w-5' />
 </a>
 </motion.div>
+
+<br />
+<br />
+
+<motion.h3
+initial={{opacity: 0}}
+whileInView={{opacity: 1}}
+transition={{duration: 0.5, delay: 0.7}}
+className='gap-2 text-2xl md:text-2xl sm:text-2xl mb-3 mt-12 px-2 sm:px-0 md:px-0 font-medium'>Landing Page</motion.h3>
+
+<div className="grid grid-cols-2">
+<Image src={project.bromberg_landing} alt="Landing Page" width={860} height={400} objectFit="cover" className="mx-auto items-center mt-2"
+onContextMenu={(e) => e.preventDefault()} />
+
+<Image src={project.bromberg_mobile} alt="Mobile Landing Page" width={400} height={200} objectFit="cover" className="mx-auto items-center mt-2 w-[50%]"
+onContextMenu={(e) => e.preventDefault()} />
+</div>
+
+<motion.h3
+initial={{opacity: 0}}
+whileInView={{opacity: 1}}
+transition={{duration: 0.5, delay: 0.7}}
+className='gap-2 text-2xl md:text-2xl sm:text-2xl mb-3 mt-12 px-2 sm:px-0 md:px-0 font-medium'>Navigation</motion.h3>
+
+<motion.h3
+initial={{opacity: 0}}
+whileInView={{opacity: 1}}
+transition={{duration: 0.5, delay: 0.7}}
+className='gap-2 text-2xl md:text-2xl sm:text-2xl mb-3 mt-12 px-2 sm:px-0 md:px-0 font-medium'>Booking a hotel</motion.h3>
+
 
 <br />
    
@@ -417,15 +461,15 @@ Mobile prototype
 initial={{opacity: 0, y: -20}}
 whileInView={{opacity: 1, y: 0}}
 transition={{duration: 0.5, delay: 0.3}}
-className='gap-2 text-2xl md:text-2xl mb-3 mt-8 font-Ovo px-2 sm:px-0 md:px-0 font-semibold text-[#3F47D3] dark:text-[#C3DE7B]'>05 / Test </motion.h3>
+className='gap-2 text-2xl md:text-2xl mb-3 mt-8 px-2 sm:px-0 md:px-0 font-medium text-[#3F47D3] dark:text-[#C3DE7B]'>05 / Test </motion.h3>
 
 <motion.p
 initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.5, delay: 0.7}}
-className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>I've conducted 1:1 interviews with three participants as part of my usability test. </b> 
-There were a lot of points to focus on, so I devided the test into two parts: <b>First, I let the users explore
-  the website freely.</b> I wanted to hear their honest opinion about the look and feel of the website without nudging them into any direction. The feedback 
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>I've conducted 1:1 interviews with three participants as part of my usability test. 
+There were a lot of points to focus on, so I devided the test into two parts: First, I let the users explore
+  the website freely. I wanted to hear their honest opinion about the look and feel of the website without nudging them into any direction. The feedback 
   was quite positive, with participants saying that landing page was a nice combination of informative content and community building. The color palette 
   was praised as refreshing. The overall experience seemed welcoming to the users.</motion.p>
 
@@ -433,8 +477,8 @@ There were a lot of points to focus on, so I devided the test into two parts: <b
  initial={{opacity: 0}}
 whileInView={{opacity: 1}}
 transition={{duration: 0.6, delay: 0.9}}
-className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'><b>The second part of my usability test focused on a certain task: the booking of 
-  a hotel.</b> 2 out of 3 participants were positively surprised that they could complete the whole process, from start to finish, on the website. There weren't 
+className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 sm:px-0 md:px-0'>The second part of my usability test focused on a certain task: the booking of 
+  a hotel. 2 out of 3 participants were positively surprised that they could complete the whole process, from start to finish, on the website. There weren't 
   any major annoyances during the first two steps – everything seemed self-explanatory. One of the participants had feedback regarding the hotel page's 
   room section. The infomation provided about each room was short, so I decided to add an interactive module with a longer description.</motion.p>
 
@@ -443,8 +487,8 @@ className='text-[15px] sm:text-[16px] lg:text-[15px] mt-6 leading-relaxed px-2 s
   whileInView={{opacity: 1, y: 0}}
   transition={{duration: 0.5, delay: 0.3}}
   className='grid sm:grid-cols-2 grid-cols-1 gap-4 mt-6'>
-  <Image src={project.bromberg_room1} alt="Room" width={860} height={400} objectFit="cover" className="mx-auto items-center mt-2 rounded-lg" onContextMenu={(e) => e.preventDefault()} />
-  <Image src={project.bromberg_room2} alt="Room Opened" width={860} height={400} objectFit="cover" className="mx-auto items-center mt-2 rounded-lg" onContextMenu={(e) => e.preventDefault()} />
+  <Image src={project.bromberg_room1} alt="Room" width={860} height={400} objectFit="cover" className="mx-auto items-center mt-2" onContextMenu={(e) => e.preventDefault()} />
+  <Image src={project.bromberg_room2} alt="Room Opened" width={860} height={400} objectFit="cover" className="mx-auto items-center mt-2" onContextMenu={(e) => e.preventDefault()} />
   </motion.div>
 
     </motion.div>

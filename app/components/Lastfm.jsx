@@ -408,7 +408,39 @@ const Lastfm = () => {
       the three core areas of the app: the home screen, user profiles (personal, other users’ and artists’) and various listening reports.</b> While there were
       many additional features I was eager to explore, I made a deliberate effort to refine the focus and prioritize only the most impactful elements to ensure
       a cohesive and streamlined user experience.</motion.p>
-    
+
+      <motion.div
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{duration: 0.6, delay: 1.1}}>
+      <Image src={project.lastfm_wire} alt="Lastfm Wireframes 1" width={1280} height={800} objectFit="cover" className="rounded-lg mx-auto"
+      onContextMenu={(e) => e.preventDefault()} />
+      </motion.div>
+
+      <motion.div
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{duration: 0.6, delay: 1.3}}>
+      <Image src={project.lastfm_frames} alt="Lastfm Wireframes 2" width={1280} height={800} objectFit="cover" className="rounded-lg mx-auto"
+      onContextMenu={(e) => e.preventDefault()} />
+      </motion.div> 
+
+      <motion.div
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{duration: 0.6, delay: 0.9}}
+      className="flex justify-center mt-8">
+      <a href="https://www.figma.com/proto/1hidKvvwHWHKS44Wy1rz6m/Last.fm-Pro--click-here-to-open-Figma-file-?page-id=0%3A1&node-id=109-44&viewport=5145%2C-669%2C1&t=QpU4TKJmZLCszAvK-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=109%3A44"
+      target="_blank" 
+      rel="noopener noreferrer"
+      className='inline-flex items-center justify-center gap-3 px-6  
+      py-2 rounded-full font-Ovo bg-[#FE2E00] text-white w-auto'>
+      Final prototype
+      <Image src={assets.right_arrow_white} alt="right arrow" className='w-5' />
+      </a>
+      </motion.div>
+
+    {/*
     <motion.div
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
@@ -417,7 +449,7 @@ const Lastfm = () => {
     className="flex items-center justify-center mx-auto mt-10 rounded-xl w-60% h-60% md:w-60% md:h-60% sm:w-100% sm:h-[700px]"
     frameBorder="0" width="100%" height="700px"
     allowFullScreen></iframe>
-    </motion.div>
+    </motion.div>*/}
 
 <br />
 

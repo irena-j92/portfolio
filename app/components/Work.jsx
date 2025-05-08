@@ -26,7 +26,7 @@ const Work = () => {
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{delay: 0.7, duration: 0.5}}
-      className='text-center max-w-2xl mx-auto mt-8 mb-20 font-Ovo'>
+      className='text-center max-w-2xl mx-auto mt-8 mb-20'>
         Here's a glimpse into some of my most recent projects.
         Dive in to see how I bring ideas to life through clean interfaces, meaningful interactions, and a strong attention to detail.
       </motion.p>

@@ -2,8 +2,10 @@ import bromberg_hero from './bromberg-hero.jpg';
 import bromberg_melanie from './bromberg-melanie.jpg';
 import bromberg_ulrike from './bromberg-ulrike.jpg';
 import bromberg_landing from './bromberg-landing.jpg';
+import bromberg_mobile from './bromberg-mobile.jpg';
 import bromberg_flow from './bromberg-flow.jpg';
 import bromberg_competitive from './bromberg-competitive.jpg';
+import bromberg_devices from './bromberg-devices.png'
 import lastfm_christa from './lastfm-christa.jpg';
 import lastfm_brad from './lastfm-brad.jpg';
 import bromberg_sitemap from './bromberg-sitemap.jpg';
@@ -34,14 +36,14 @@ import lastfm_define from './lastfm-define.png';
 import lastfm_proto from './lastfm-proto.png';
 import lastfm_test from './lastfm-test.png';
 import lastfm_old from './lastfm-old.jpg';
-import lastfm_screens from './lastfm-screens.jpg';
 import lastfm_personality from './lastfm-personality.jpg';
 import lastfm_iteration from './lastfm-iteration.jpg';
 import brom_affinity from './brom-affinity.jpg';
 import bromberg_room1 from './bromberg-room1.jpg';
 import bromberg_room2 from './bromberg-room2.jpg';
-import brom_cancel from './brom-cancel.jpg'
-
+import brom_cancel from './brom-cancel.jpg';
+import lastfm_wire from './lastfm-wire.jpg';
+import lastfm_frames from './lastfm-frames.jpg';
 
 export const project = {
     bromberg_hero,
@@ -80,12 +82,15 @@ export const project = {
     lastfm_proto,
     lastfm_test,
     lastfm_old,
-    lastfm_screens,
     lastfm_personality,
     lastfm_iteration,
     brom_affinity,
     bromberg_room1,
     bromberg_room2,
-    brom_cancel
+    brom_cancel,
+    lastfm_wire,
+    lastfm_frames,
+    bromberg_devices,
+    bromberg_mobile
 }
 

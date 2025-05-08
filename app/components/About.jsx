@@ -29,7 +29,7 @@ const About = ({ isDarkMode }) => {
             whileInView={{opacity: 1}}
             transition={{duration: 0.6, delay: 0.8}}
         className="flex-1">
-          <p className="mb-10 max-w-2xl font-Ovo">
+          <p className="mb-10 max-w-2xl">
           As a passionate UX/UI designer, I specialize in creating intuitive and engaging digital experiences that resonate with users,
           ensuring that each project not only meets functional requirements but also delivers a delightful user journey.
           </p>
@@ -57,8 +57,8 @@ const About = ({ isDarkMode }) => {
           initial={{y: 20, opacity: 0}}
           whileInView={{y: 0, opacity: 1}}
           transition={{delay: 1.3, duration: 0.5}}
-          className="my-6 text-gray-700 text-xl font-bold font-Ovo
-          dark:text-white/80 mb-4 mt-8">Tools I use</motion.h4>
+          className="my-6 text-gray-700 text-xl font-medium
+          dark:text-white/80 mb-4 mt-8">Tools I use:</motion.h4>
 
           <motion.ul
            initial={{opacity: 0}}
